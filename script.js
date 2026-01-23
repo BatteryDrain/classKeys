@@ -7,11 +7,16 @@ populate();
 function populate() {
     content.replaceChildren();
     for(i=0; i<DATA.length; i++){
-        place();
+        place(i);
     }
 }
 
 
-function place() {
-    
+function place(i) {
+    fig = document.createElement('figure');
+        figC = document.createElement('figcaption');
+        figC.innerHTML = DATA[i][1];
+        fig.appendchild(figC);
+    content.appendchild(fig);
+    console.log("placed");
 }
