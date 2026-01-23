@@ -34,7 +34,6 @@ background-color: var(--lightGrey);
 }
 
 #content {
-    min-height: 100vh;
     background-color: var(--grey);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
