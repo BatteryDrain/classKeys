@@ -12,6 +12,7 @@
 body {
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
+    background-color: var(--lightGrey);
 }
 
 header {
@@ -20,7 +21,7 @@ header {
 }
 
 #angle {
-background-color: var(--grey);
+background-color: var(--lightGrey);
     position: absolute;
     z-index: 0;
     top: 50px;
