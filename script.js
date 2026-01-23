@@ -6,8 +6,10 @@ populate();
 
 function populate() {
     content.replaceChildren();
-    for(i=0; i<DATA.length; i++){
-        place(i);
+    for(i=0; i<DATASORTED.length; i++){
+        if(DATASORTED[i][1] != "" && DATASORTED[i][3] != ""){
+            place(i);
+        }
     }
 }
 
@@ -15,7 +17,7 @@ function populate() {
 function place(g) {
     fig = document.createElement('figure');
         figC = document.createElement('figcaption');
-            figC.innerHTML = DATA[g][1];
+            figC.innerHTML = DATASORTED[g][1];
             fig.appendChild(figC);
 
         foto = document.createElement("img");
