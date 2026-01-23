@@ -88,3 +88,11 @@ figure img {
     height: auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
