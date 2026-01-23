@@ -16,7 +16,7 @@ function place(i) {
     fig = document.createElement('figure');
         figC = document.createElement('figcaption');
         figC.innerHTML = DATA[i][1];
-        fig.appendchild(figC);
-    content.appendchild(fig);
+        fig.appendChild(figC);
+    content.appendChild(fig);
     console.log("placed");
 }
