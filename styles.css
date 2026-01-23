@@ -3,7 +3,7 @@
 }
 
 :root {
-    --darkGrey: rgb(50, 52, 57);
+    --blue: rgb(44, 161, 204);
     --grey: rgb(68, 72, 81);
     --lightGrey: rgb(128, 128, 128);
     --navSwidth: 45px;
@@ -30,7 +30,7 @@ background-color: var(--lightGrey);
     left: -30px;
     transform: rotate(-5deg);
     top: -100px;
-    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0);
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0);
 }
 
 section {
