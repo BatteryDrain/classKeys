@@ -9,6 +9,11 @@
     --navSwidth: 45px;
 }
 
+body {
+    margin: 0;
+    font-family: "Mulish", Arial, sans-serif;
+}
+
 #angle {
     background-color: var(--grey);
 }
