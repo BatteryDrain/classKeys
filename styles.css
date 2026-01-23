@@ -25,4 +25,6 @@ background-color: var(--grey);
     z-index: 0;
     top: 50px;
     left: 300px;
+    width: 100vw;
+    height: 300px;
 }
