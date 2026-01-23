@@ -63,7 +63,7 @@ background-color: var(--lightGrey);
     z-index: 0;
     top: 50px;
     width: 120vw;
-    height: 200px;
+    height: 30vw;
     left: -30px;
     transform: rotate(-5deg);
     top: -100px;
@@ -76,7 +76,7 @@ background-color: var(--lightGrey);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 figure {
