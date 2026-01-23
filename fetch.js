@@ -5,7 +5,7 @@ MOVIETAGS = [[]];
 WATCH = [[]];
 
 
-const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRz1Mx3lGUfZ4qkWlQu36zYPBfgYN6I_9AJy1ersgxtpczS9Y8V0T43KAvELTWOcSPBaLC69an09UGQ/pub?gid=0&single=trueoutput=csv';
+const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRz1Mx3lGUfZ4qkWlQu36zYPBfgYN6I_9AJy1ersgxtpczS9Y8V0T43KAvELTWOcSPBaLC69an09UGQ/pub?output=csv';
 
 fetch(url)
 .then(response => response.text())
