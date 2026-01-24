@@ -24,7 +24,7 @@ function place(g) {
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
-                foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g] + "/header.jpg";
+                foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g][4] + "/header.jpg";
             } else {
                 foto.src = pict;
             }
