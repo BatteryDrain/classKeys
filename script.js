@@ -7,7 +7,7 @@ populate();
 function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
-        if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
+        if(DATASORTED[i][1] != "" && DATASORTED[i][3] != ""){
             place(i);
         }
     }
