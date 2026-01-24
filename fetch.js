@@ -30,24 +30,8 @@ function csvToBIGARRAY(csvString) {
         DATASORTED.push(DATA[d]);
     }
 
-    for(i=1; i<DATASORTED.length; i++){
-        temp = [parseInt(DATASORTED[i][0])];
-        for(j=0; j<5; j++){
-            if(DATASORTED[i][j + 6] != ''){
-                temp.push(parseInt(DATASORTED[i][j + 6]));
-            }
-        }
-        MOVIETAGS.push(temp);
-    }
-
-    for(i=1; i<DATASORTED.length; i++){
-    temp = [parseInt(DATASORTED[i][0])];
-    for(j=0; j<5; j++){
-        if(DATASORTED[i][j + 17] != ''){
-            temp.push(parseInt(DATASORTED[i][j + 17]));
-        }
-    }
-    WATCH.push(temp);
+    for(i=0; i<DATASORTED.length; i++){
+        PICS.push(DATASORTED[i][3]);
     }
 
     loadScript("script.js", () => {
