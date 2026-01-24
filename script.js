@@ -7,7 +7,7 @@ populate();
 function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
-        if(DATASORTED[i][1] != "" && DATASORTED[i][3] != ""){
+        if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
             place(i);
         }
     }
@@ -22,7 +22,7 @@ function place(g) {
 
         foto = document.createElement("img");
             foto.alt = "game cover for " + DATASORTED[g][1];
-            pict = DATASORTED[g][3];
+            pict = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g] + "/header.jpg";
             if (pict == "") {
                 console.error("no image url for " + DATASORTED[g][1]);
             } else {
