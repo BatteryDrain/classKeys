@@ -22,9 +22,9 @@ function place(g) {
 
         foto = document.createElement("img");
             foto.alt = "game cover for " + DATASORTED[g][1];
-            pict = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g] + "/header.jpg";
+            pict = DATASORTED[g][3];
             if (pict == "") {
-                console.error("no image url for " + DATASORTED[g][1]);
+                foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g] + "/header.jpg";
             } else {
                 foto.src = pict;
             }
