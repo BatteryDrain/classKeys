@@ -31,7 +31,9 @@ function csvToBIGARRAY(csvString) {
     }
 
     for(i=0; i<DATASORTED.length; i++){
-        PICS.push(DATASORTED[i][3].split("/"));
+        if(DATASORTED[i][2] != ""){
+            PICS.push(DATASORTED[i][2].split("/"));
+        }
     }
 
     loadScript("script.js", () => {
