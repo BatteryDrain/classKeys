@@ -28,6 +28,7 @@ function place(g) {
             } else {
                 foto.src = pict;
             }
+            console.log(PICS[g][4]);
             foto.style.backgroundColor = `hsl(${place * 108}, ${65}%, ${30}%)`;
             foto.setAttribute("onclick", "goToLink(" + DATASORTED[g][0] + ")");
             foto.loading = "lazy";
