@@ -2,7 +2,11 @@ console.log("in script.js");
 
 populate();
 
-
+lightmode.addEventListener("change", () => {
+    if(lightmode.checked){
+        content.style = "backgroundColor: rgb(255, 255, 255);";
+    }
+});
 
 function populate() {
     content.replaceChildren();
