@@ -57,6 +57,6 @@ function goToLink(number){
 
 function findPicWithID(ID){
     for(i=0; i<PICS.length; i++){
-        if(PICS[i][0] == ID){return PICS[i][1];}
+        if(PICS[i][0] == ID){return i;}
     }
 }
