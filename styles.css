@@ -2,6 +2,10 @@
    box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 :root {
     --blue: rgb(44, 161, 204);
     --grey: rgb(68, 72, 81);
@@ -10,7 +14,6 @@
 }
 
 body {
-    overflow-x: hidden;
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
     background-color: var(--lightGrey);
@@ -79,7 +82,7 @@ input:checked + .slider::before {
 
 #angle {
     background-color: var(--lightGrey);
-    position: absolute;
+    position: fixed;
     z-index: 0;
     width: 120vw;
     height: 25vh;
