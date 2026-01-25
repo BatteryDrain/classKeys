@@ -82,11 +82,11 @@ input:checked + .slider::before {
 
 #angle {
     position: absolute;
-    width: 200%;
-    max-width: 200vw;
+    width: 110%;
+    max-width: 110vw;
     height: 25vh;
-    top: -15%;
-    left: -50%;
+    top: -50px;
+    left: -5%;
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
     z-index: 0;
