@@ -34,8 +34,10 @@ function place(g) {
             } else {
                 foto.src = pict;
             }
-            console.log("g" + g + "," + PICS[g][4]);
-            foto.style.backgroundColor = `hsl(${place * 108}, ${65}%, ${30}%)`;
+            if(PICS[g][4]){
+                console.log("g" + g + "," + PICS[g][4]);
+            }
+            foto.style.backgroundColor = "rgb(0, 0, 0)";
             foto.setAttribute("onclick", "goToLink(" + DATASORTED[g][0] + ")");
             foto.loading = "lazy";
             foto.decoding = "async";
