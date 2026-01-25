@@ -8,7 +8,7 @@ lightmode.addEventListener("change", () => {
     }
 });
 
-function populate() {
+async function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
@@ -19,7 +19,7 @@ function populate() {
 }
 
 
-function place(g) {
+async function place(g) {
     fig = document.createElement('figure');
         figC = document.createElement('figcaption');
             figC.innerHTML = DATASORTED[g][1];
