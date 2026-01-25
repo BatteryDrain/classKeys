@@ -10,7 +10,7 @@ lightmode.addEventListener("change", () => {
 
 function populate() {
     content.replaceChildren();
-    for(i=1; i<DATASORTED.length; i++){
+    for(let i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
             place(i);
         }
@@ -20,12 +20,12 @@ function populate() {
 
 
 function place(g) {
-    fig = document.createElement('figure');
-        figC = document.createElement('figcaption');
+    const fig = document.createElement('figure');
+        const figC = document.createElement('figcaption');
             figC.innerHTML = DATASORTED[g][1];
             fig.appendChild(figC);
 
-        foto = document.createElement("img");
+        const foto = document.createElement("img");
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
@@ -39,6 +39,7 @@ function place(g) {
                     };
 
                     foto.onerror = () => {
+                        console.warn("Image failed:", foto.src);
                         foto.src = "/images/fallback.jpg";
                         console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
                     };
@@ -63,7 +64,7 @@ function goToLink(number){
 }
 
 function findPicWithID(ID){
-    for(i=0; i<PICS.length; i++){
+    for(let i=0; i<PICS.length; i++){
         if(PICS[i][0] == ID){return PICS[i][1];}
     }
     return null;
