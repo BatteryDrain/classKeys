@@ -31,11 +31,11 @@ async function place(g) {
             if (pict == "") {
                 temp = await findPicWithID(DATASORTED[g][0]);
                 foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
-                img.onload = () => {
+                foto.onload = () => {
                     console.log("no picture fount assuming from steam code of: " + temp);
                 };
 
-                img.onerror = () => {
+                foto.onerror = () => {
                     img.src = "/images/fallback.jpg";
                     console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
                 };
