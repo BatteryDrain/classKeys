@@ -33,12 +33,13 @@ function csvToBIGARRAY(csvString) {
     for(i=0; i<DATASORTED.length; i++){
         if(DATASORTED[i] && DATASORTED[i][2] && DATASORTED[i][2] !== ""){
             temp = DATASORTED[i][2].split("/");
-            PICS.push(DATASORTED[i][0], temp[4]);
+            PICS.push([DATASORTED[i][0], temp[4]]);
         }
     }
 
     loadScript("script.js", () => {
-      });
+
+    });
 }
 
 function loadScript(src, callback) {
