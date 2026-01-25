@@ -12,7 +12,7 @@ function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
-            await place(i);
+            place(i);
         }
         count.innerHTML = content.childElementCount;
     }
@@ -30,15 +30,19 @@ function place(g) {
             pict = DATASORTED[g][3];
             if (pict == "") {
                 temp = findPicWithID(DATASORTED[g][0]);
-                foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
-                foto.onload = () => {
-                    console.log("no picture fount assuming from steam code of: " + temp);
-                };
-
-                foto.onerror = () => {
+                if (!temp) {
                     foto.src = "/images/fallback.jpg";
-                    console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
-                };
+                } else {
+                    foto.src = `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${temp}/header.jpg`;
+                    foto.onload = () => {
+                        console.log("no picture fount assuming from steam code of: " + temp);
+                    };
+
+                    foto.onerror = () => {
+                        foto.src = "/images/fallback.jpg";
+                        console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
+                    };
+                }
             } else {
                 foto.src = pict;
             }
