@@ -8,6 +8,7 @@ lightmode.addEventListener("change", () => {
     } else {
         content.style.backgroundColor = "";
     }
+    populate();
 });
 
 function populate() {
@@ -25,6 +26,9 @@ function place(g) {
     const fig = document.createElement('figure');
         const figC = document.createElement('figcaption');
             figC.innerHTML = DATASORTED[g][1];
+            if(lightmode.checked){
+                figC.style.color = "rgb(0,0,0)";
+            }
             fig.appendChild(figC);
 
         const foto = document.createElement("img");
