@@ -67,13 +67,11 @@ function checkIfImageIsValid(url) {
         const img = new Image();
         
         img.onload = () => {
-            console.log(`Image from ${url} loaded successfully.`);
-            resolve(true); 
+            return true;
         };
         
         img.onerror = () => {
-            console.error(`Image from ${url} failed to load.`);
-            resolve(false);
+            return false;
         };
     });
 }
