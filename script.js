@@ -31,7 +31,7 @@ function place(g) {
             if (pict == "") {
                 if(g+1 < PICS.length){
                     for(i=0; i<PICS.length; i++){
-                        if(phraseInt(PICS[i][0]) == DATASORTED[g][0]){
+                        if(PICS[i][0] == DATASORTED[g][0]){
                             temp = PICS[i][2];
                         }
                     }
