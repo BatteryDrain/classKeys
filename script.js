@@ -11,7 +11,6 @@ lightmode.addEventListener("change", () => {
 function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
-        console.log("before" + DATASORTED[i]);
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
             place(i);
         }
@@ -43,8 +42,6 @@ function place(g) {
             foto.decoding = "async";
             fig.appendChild(foto);
     content.appendChild(fig);
-    
-    console.log("afrter" + DATASORTED[g]);
 }
 
 function goToLink(number){
