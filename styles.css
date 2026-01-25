@@ -81,15 +81,17 @@ input:checked + .slider::before {
 }
 
 #angle {
-    background-color: var(--lightGrey);
-    position: absolute;
-    z-index: 0;
-    width: 120vw;
+    position: fixed;      /* stays in place */
+    width: 200%;          /* make it big enough for rotation */
+    max-width: 200vw;     /* cap width to prevent extreme overflow */
     height: 25vh;
-    top: -100px;
-    left: -30px;
+    top: -15%;            /* slightly above viewport */
+    left: -50%;           /* center rotation without extending page */
     transform: rotate(-5deg);
-    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0);
+    background-color: var(--lightGrey);
+    z-index: 0;
+    box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.5);
+    pointer-events: none; /* avoid interaction */
 }
 
 #content {
