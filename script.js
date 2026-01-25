@@ -35,7 +35,7 @@ function place(g) {
                 } else {
                     foto.src = `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${temp}/header.jpg`;
                     foto.onload = () => {
-                        console.log("no picture fount assuming from steam code of: " + temp);
+                        console.log("no picture found assuming from steam code of: " + temp);
                     };
 
                     foto.onerror = () => {
