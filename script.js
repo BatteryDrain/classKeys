@@ -12,7 +12,7 @@ async function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
-            place(i);
+            await place(i);
         }
         count.innerHTML = content.childElementCount;
     }
@@ -29,9 +29,9 @@ async function place(g) {
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
-                temp = findPicWithID(DATASORTED[g][0]);
+                temp = await findPicWithID(DATASORTED[g][0]);
                 foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
-                if(checkIfImageIsValid(temp)){
+                if(await checkIfImageIsValid(temp)){
                     console.log("no picture fount assuming from steam code of: " + temp);
                 } else {
                     console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " g = " + g - 1);
@@ -59,6 +59,7 @@ function findPicWithID(ID){
     for(i=0; i<PICS.length; i++){
         if(PICS[i][0] == ID){return PICS[i][1];}
     }
+    return null;
 }
 
 function checkIfImageIsValid(url) {
