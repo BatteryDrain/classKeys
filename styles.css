@@ -36,6 +36,7 @@ h1 {
     display: inline-block;
     width: 32px;
     height:18px;
+    margin-right: 5px;
     background-color: #ccc;
     border-radius: 34px;
     cursor: pointer;
@@ -44,8 +45,9 @@ h1 {
 
 .slider::before {
     content: "";
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    width: 13px;
+    height: 13px;
     background-color: white;
     border-radius: 50%;
     left: 3px;
