@@ -77,7 +77,8 @@ input:checked + .slider::before {
 }
 
 #angle {
-background-color: var(--lightGrey);
+    overflow-x: hidden;
+    background-color: var(--lightGrey);
     position: absolute;
     z-index: 0;
     width: 120vw;
