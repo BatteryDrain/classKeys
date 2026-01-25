@@ -29,7 +29,7 @@ function place(g) {
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
-                if(g < PICS.length){
+                if(g+1 < PICS.length){
                     foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g][4] + "/header.jpg";
                     console.log("no picture fount assuming from steam code of: " + PICS[g][4]);
                 }
