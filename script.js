@@ -4,11 +4,11 @@ populate();
 
 lightmode.addEventListener("change", () => {
     if(lightmode.checked){
-        content.style = "backgroundColor: rgb(255, 255, 255);";
+        content.style.backgroundColor = "rgb(255, 255, 255)";
     }
 });
 
-async function populate() {
+function populate() {
     content.replaceChildren();
     for(i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][1] != "" && DATASORTED[i][2] != ""){
@@ -19,7 +19,7 @@ async function populate() {
 }
 
 
-async function place(g) {
+function place(g) {
     fig = document.createElement('figure');
         figC = document.createElement('figcaption');
             figC.innerHTML = DATASORTED[g][1];
@@ -29,7 +29,7 @@ async function place(g) {
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
-                temp = await findPicWithID(DATASORTED[g][0]);
+                temp = findPicWithID(DATASORTED[g][0]);
                 foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
                 foto.onload = () => {
                     console.log("no picture fount assuming from steam code of: " + temp);
