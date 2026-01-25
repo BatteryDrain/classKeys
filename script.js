@@ -32,6 +32,8 @@ function place(g) {
                 if(g+1 < PICS.length){
                     foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g][4] + "/header.jpg";
                     console.log("no picture fount assuming from steam code of: " + PICS[g][4]);
+                } else {
+                    console.error("no picture could be found, or assumed for " + DATASORTED[g][1]);
                 }
             } else {
                 foto.src = pict;
