@@ -30,11 +30,7 @@ function place(g) {
             pict = DATASORTED[g][3];
             if (pict == "") {
                 if(g+1 < PICS.length){
-                    for(i=0; i<PICS.length; i++){
-                        if(PICS[i][0] == DATASORTED[g][0]){
-                            temp = PICS[i][2];
-                        }
-                    }
+                    temp = findPicWithID(DATASORTED[g][0]);
                     foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
                     console.log("no picture fount assuming from steam code of: " + temp);
                 } else {
@@ -56,5 +52,11 @@ function goToLink(number){
         if(DATA[index][0] == number){
             window.open(DATA[index][2], "_self");
         }
+    }
+}
+
+function findPicWithID(ID){
+    for(i=0; i<PICS.length; i++){
+        if(PICS[i][0] == ID){return PICS[i][1];}
     }
 }
