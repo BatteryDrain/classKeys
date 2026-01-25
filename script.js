@@ -32,11 +32,11 @@ function place(g) {
                 if(g+1 < PICS.length){
                     for(i=0; i<PICS.length; i++){
                         if(PICS[i][0] == DATASORTED[g][0]){
-                            temp = PICS[i][5];
+                            temp = PICS[i][2];
                         }
                     }
                     foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
-                    console.log("no picture fount assuming from steam code of: " + PICS[g][5]);
+                    console.log("no picture fount assuming from steam code of: " + PICS[g][2]);
                 } else {
                     console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " g = " + g);
                 }
