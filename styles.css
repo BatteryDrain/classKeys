@@ -68,7 +68,7 @@ input:checked + .slider::before {
     color: black;
     position: absolute;
     right: 5px;
-    top: 35px;
+    top: 0;
     margin: 0;
     height: fit-content;
     border-radius: 15px;
