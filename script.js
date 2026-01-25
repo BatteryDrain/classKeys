@@ -36,7 +36,7 @@ async function place(g) {
                 };
 
                 foto.onerror = () => {
-                    img.src = "/images/fallback.jpg";
+                    foto.src = "/images/fallback.jpg";
                     console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
                 };
             } else {
