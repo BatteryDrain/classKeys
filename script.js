@@ -31,7 +31,7 @@ function place(g) {
             if (pict == "") {
                 temp = findPicWithID(DATASORTED[g][0]);
                 if (!temp) {
-                    console.warn("no steam code could be found for ID = " g - 1);
+                    console.error("no steam code could be found for ID = " + g - 1);
                 } else {
                     foto.src = `https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/${temp}/header.jpg`;
                     foto.onload = () => {
