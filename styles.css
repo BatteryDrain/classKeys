@@ -19,6 +19,11 @@ body {
     background-color: var(--lightGrey);
 }
 
+main {
+    position: relative;
+    overflow-x: hidden;
+}
+
 header {
     position: absolute;
     z-index: 3;
@@ -85,7 +90,7 @@ input:checked + .slider::before {
     width: 110%;
     max-width: 110vw;
     height: 25vh;
-    top: -50px;
+    top: -90px;
     left: -5%;
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
