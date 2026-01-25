@@ -32,12 +32,10 @@ function place(g) {
             if (pict == "") {
                 if(g < PICS.length){
                     foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + PICS[g][4] + "/header.jpg";
+                    console.log("no picture fount assuming from steam code of: " + PICS[g][4]);
                 }
             } else {
                 foto.src = pict;
-            }
-            if(g < PICS.length){
-                console.log("g" + g + "," + PICS[g][4]);
             }
             foto.style.backgroundColor = "rgb(0, 0, 0)";
             foto.setAttribute("onclick", "goToLink(" + DATASORTED[g][0] + ")");
