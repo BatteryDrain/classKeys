@@ -82,7 +82,7 @@ input:checked + .slider::before {
 
 #angle {
     background-color: var(--lightGrey);
-    position: fixed;
+    position: absolute;
     z-index: 0;
     width: 120vw;
     height: 25vh;
