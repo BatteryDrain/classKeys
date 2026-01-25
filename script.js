@@ -31,11 +31,11 @@ async function place(g) {
             if (pict == "") {
                 temp = await findPicWithID(DATASORTED[g][0]);
                 foto.src = "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/" + temp + "/header.jpg";
-                if(await checkIfImageIsValid(foto.src)){
-                    console.log("no picture fount assuming from steam code of: " + temp);
-                } else {
-                    console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " g = " + g - 1);
-                }
+                // if(await checkIfImageIsValid(foto.src)){
+                //     console.log("no picture fount assuming from steam code of: " + temp);
+                // } else {
+                //     console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " g = " + g - 1);
+                // }
             } else {
                 foto.src = pict;
             }
