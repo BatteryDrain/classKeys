@@ -39,6 +39,8 @@ function place(g) {
             foto.decoding = "async";
             fig.appendChild(foto);
     content.appendChild(fig);
+
+    count.innerHTML = content.childElementCount;
 }
 
 function goToLink(number){

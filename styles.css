@@ -57,6 +57,12 @@ input:checked + .slider::before {
     transform: translateX(14px);
 }
 
+#count {
+    background-color: white;
+    color: black;
+    justify-content: end;
+}
+
 #angle {
 background-color: var(--lightGrey);
     position: absolute;
