@@ -34,6 +34,7 @@ function place(g) {
                     console.log("no picture fount assuming from steam code of: " + PICS[g][4]);
                 } else {
                     console.error("no picture could be found, or assumed for " + DATASORTED[g][1]);
+                    console.log("g = " + g);
                 }
             } else {
                 foto.src = pict;

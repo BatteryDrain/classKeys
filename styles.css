@@ -19,6 +19,7 @@ header {
     position: absolute;
     z-index: 3;
     width: 100vw;
+    color: white;
 }
 
 h1 {
