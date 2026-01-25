@@ -106,6 +106,10 @@ figure img {
     height: auto;
 }
 
+p {
+    margin: 0;
+}
+
 .row {
     display: flex;
     flex-direction: row;
