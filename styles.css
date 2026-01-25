@@ -18,6 +18,7 @@ body {
 header {
     position: absolute;
     z-index: 3;
+    width: 100vw;
 }
 
 h1 {
