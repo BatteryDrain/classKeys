@@ -90,7 +90,7 @@ input:checked + .slider::before {
     width: 110%;
     max-width: 110vw;
     height: 25vh;
-    top: -90px;
+    top: -80px;
     left: -5%;
     transform: rotate(-5deg);
     background-color: var(--lightGrey);

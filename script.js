@@ -5,6 +5,8 @@ populate();
 lightmode.addEventListener("change", () => {
     if(lightmode.checked){
         content.style.backgroundColor = "rgb(255, 255, 255)";
+    } else {
+        content.style.backgroundColor = "";
     }
 });
 
