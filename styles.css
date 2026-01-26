@@ -26,9 +26,10 @@ main {
 
 header {
     position: absolute;
-    z-index: 3;
+    z-index: 30;
     width: 100vw;
     color: white;
+
 }
 
 #logo {
