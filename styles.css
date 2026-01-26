@@ -143,7 +143,7 @@ p {
     }
 
     figure:hover {
-        z-index: 0;
+        z-index: -1;
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
