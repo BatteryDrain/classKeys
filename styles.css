@@ -31,10 +31,6 @@ header {
     color: white;
 }
 
-h1 {
-    margin: 0;
-}
-
 .switch input {
     opacity: 0;
     width: 0;
@@ -102,7 +98,6 @@ input:checked + .slider::before {
 #content {
     background-color: var(--grey);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
     padding-top: 120px;
