@@ -31,6 +31,11 @@ header {
     color: white;
 }
 
+#logo {
+    width: 50vw;
+    height: auto;
+}
+
 .switch input {
     opacity: 0;
     width: 0;
