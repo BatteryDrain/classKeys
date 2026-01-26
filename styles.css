@@ -88,6 +88,7 @@ input:checked + .slider::before {
 
 #angle {
     position: absolute;
+    grid-column: 1 / -1;
     width: 110%;
     max-width: 110vw;
     height: 25vh;
@@ -107,18 +108,20 @@ input:checked + .slider::before {
     grid-gap: 1rem;
     padding-top: 120px;
     isolation: isolate;
+    position: relative;
 }
 
 figure {
     background-color: rgba(0, 0, 0, 0);
     color: white;
+    position: relative;
+    z-index: 1;
 }
 
 figure img {
     width: 100%;
     min-height: 100px;
     height: auto;
-    z-index: 1;
 }
 
 p {
