@@ -95,7 +95,7 @@ input:checked + .slider::before {
     left: -5%;
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
-    z-index: 0;
+    z-index: 10;
     box-shadow: 0px 0px 40px 5px rgb(0, 0, 0);
     pointer-events: none;
 }
@@ -118,6 +118,7 @@ figure img {
     width: 100%;
     min-height: 100px;
     height: auto;
+    z-index: 1;
 }
 
 p {
@@ -144,7 +145,7 @@ p {
     }
 
     figure:hover {
-        z-index: 0;
+        z-index: 2;
         transform: scale(1.1);
         transform-style: flat;
         filter: drop-shadow(16px 16px 30px var(--blue));
