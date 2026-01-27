@@ -120,6 +120,11 @@ figure img {
     height: auto;
 }
 
+figure p {
+    background-color: var(--lightGrey);
+    width: fit-content;
+}
+
 p {
     margin: 0;
 }

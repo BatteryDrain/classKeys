@@ -58,18 +58,17 @@ function place(g) {
             foto.decoding = "async";
             fig.appendChild(foto);
         const p = document.createElement("p");
-            if(DATASORTED[g][3] == "s"){
+            if(DATASORTED[g][4] == "s"){
                 p.innerHTML = "singleplayer";
             } else {
-                if(DATASORTED[g][3] == "b"){
+                if(DATASORTED[g][4] == "b"){
                     p.innerHTML = "multiplayer &singleplayer";
                 } else {
-                    if(DATASORTED[g][3] == "m"){
+                    if(DATASORTED[g][4] == "m"){
                         p.innerHTML = "multiplayer";
                     } else {
                         p.innerHTML = "error";
-                        console.error("singleplayer? not entered on game" + g);
-                        console.log(DATASORTED[g][3]);
+                        console.error("singleplayer? not entered on game " + g);
                     }
                 }
             }
