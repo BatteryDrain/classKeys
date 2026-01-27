@@ -57,6 +57,25 @@ function place(g) {
             foto.loading = "lazy";
             foto.decoding = "async";
             fig.appendChild(foto);
+        const p = document.createElement("p");
+            if(DATASORTED[g][3] == "s"){
+                p.innerHTML = "singleplayer";
+            } else {
+                if(DATASORTED[g][3] == "b"){
+                    p.innerHTML = "multiplayer &singleplayer";
+                } else {
+                    if(DATASORTED[g][3] == "m"){
+                        p.innerHTML = "multiplayer";
+                    } else {
+                        p.innerHTML = "error";
+                        console.error("singleplayer? not entered on game" + g);
+                    }
+                }
+            }
+            fig.appendChild(p);
+        const div = document.createElement("div");
+            div.classList.add("row");
+            fig.appendChild(div);
     content.appendChild(fig);
 }
 
