@@ -118,6 +118,7 @@ figure {
     width: 100%;
     min-height: 100px;
     height: auto;
+    margin: 0 2px;
 }
 
 figure p {
