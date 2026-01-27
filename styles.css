@@ -123,6 +123,7 @@ figure img {
 figure p {
     background-color: var(--lightGrey);
     width: fit-content;
+    padding: 0 2px;
 }
 
 p {
