@@ -82,22 +82,22 @@ function place(g) {
             if(DATASORTED[g][5] != ""){
                 const pic = document.createElement("img");
                 pic.src = "assets/Windows.svg.png";
-                pic.width = "40";
-                pic.height = "40";
+                pic.width = "20";
+                pic.height = "20";
                 div.appendChild(pic);
             }
             if(DATASORTED[g][6] != ""){
                 const pic = document.createElement("img");
                 pic.src = "assets/Apple_white.svg.png";
-                pic.width = "40";
-                pic.height = "40";
+                pic.width = "20";
+                pic.height = "20";
                 div.appendChild(pic);
             }
             if(DATASORTED[g][7] != ""){
                 const pic = document.createElement("img");
                 pic.src = "assets/linux-white-logo.png";
-                pic.width = "40";
-                pic.height = "40";
+                pic.width = "20";
+                pic.height = "20";
                 div.appendChild(pic);
             }
             fig.appendChild(div);
