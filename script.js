@@ -58,11 +58,14 @@ function place(g) {
             foto.decoding = "async";
             fig.appendChild(foto);
         const p = document.createElement("p");
+            if(lightmode.checked){
+                p.style.color = "rgb(0,0,0)";
+            }
             if(DATASORTED[g][4] == "s"){
                 p.innerHTML = "singleplayer";
             } else {
                 if(DATASORTED[g][4] == "b"){
-                    p.innerHTML = "multiplayer &singleplayer";
+                    p.innerHTML = "multiplayer & singleplayer";
                 } else {
                     if(DATASORTED[g][4] == "m"){
                         p.innerHTML = "multiplayer";
@@ -74,9 +77,6 @@ function place(g) {
             }
             fig.appendChild(p);
         const div = document.createElement("div");
-            if(lightmode.checked){
-                figC.style.color = "rgb(0,0,0)";
-            }
             div.classList.add("row");
             fig.appendChild(div);
     content.appendChild(fig);
