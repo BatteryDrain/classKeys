@@ -74,6 +74,9 @@ function place(g) {
             }
             fig.appendChild(p);
         const div = document.createElement("div");
+            if(lightmode.checked){
+                figC.style.color = "rgb(0,0,0)";
+            }
             div.classList.add("row");
             fig.appendChild(div);
     content.appendChild(fig);
