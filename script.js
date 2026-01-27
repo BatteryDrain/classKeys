@@ -47,7 +47,7 @@ function place(g) {
 
                     foto.onerror = () => {
                         console.warn("Image failed:", foto.src);
-                        console.error("no picture could be found, or assumed for " + DATASORTED[g][1] + " ID = " + g - 1);
+                        console.error("no picture could be found, or assumed for " + DATASORTED[g][1]);
                     };
                 }
             } else {
@@ -74,7 +74,7 @@ function place(g) {
                             p.innerHTML = "multiplayer";
                         } else {
                             p.innerHTML = "error";
-                            console.error("singleplayer? not entered on game " + g);
+                            console.error("singleplayer? not entered on game " + DATASORTED[g][1]);
                         }
                     }
                 }
