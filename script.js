@@ -69,6 +69,7 @@ function place(g) {
                     } else {
                         p.innerHTML = "error";
                         console.error("singleplayer? not entered on game" + g);
+                        console.log(DATASORTED[g][3]);
                     }
                 }
             }
