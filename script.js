@@ -32,6 +32,7 @@ function place(g) {
             fig.appendChild(figC);
 
         const foto = document.createElement("img");
+            foto.classList.add("foto");
             foto.alt = "game cover for " + DATASORTED[g][1];
             pict = DATASORTED[g][3];
             if (pict == "") {
