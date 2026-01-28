@@ -167,7 +167,7 @@ p {
     }
 }
 
-@media screen and (max-width: 558px) {
+@media screen and (max-height: 558px) {
     #angle {
         height: 150px;
     }
