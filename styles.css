@@ -110,7 +110,7 @@ input:checked + .slider::before {
 }
 
 figcaption {
-    font-size: large;
+    font-size: larger;
 }
 
 figure {
