@@ -109,6 +109,10 @@ input:checked + .slider::before {
     padding-top: 120px;
 }
 
+figcaption {
+    font-size: large;
+}
+
 figure {
     background-color: rgba(0, 0, 0, 0);
     color: white;
