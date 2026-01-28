@@ -102,6 +102,7 @@ function place(g) {
                     pic.height = "20";
                     div2.appendChild(pic);
                 }
+                div.appendChild(div2);
             fig.appendChild(div);
     content.appendChild(fig);
 }
