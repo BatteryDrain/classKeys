@@ -33,8 +33,9 @@ header {
 }
 
 #logo {
-    width: 50vw;
+    width: 40vw;
     height: auto;
+    margin: 2px;
 }
 
 .switch input {
