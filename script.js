@@ -81,6 +81,7 @@ function place(g) {
                 div.appendChild(p);
             div2 = document.createElement("div");
                 div2.classList.add("row");
+                div2.classList.add("div2");
                 if(DATASORTED[g][5] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/Windows.svg.png";
