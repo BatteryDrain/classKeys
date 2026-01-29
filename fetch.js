@@ -36,10 +36,29 @@ function csvToBIGARRAY(csvString) {
         }
     }
 
+    shuffle(DATASORTED);
+
     loadScript("script.js", () => {
 
     });
 }
+
+// Source - https://stackoverflow.com/a/2450976
+// Posted by ChristopheD, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-01-29, License - CC BY-SA 4.0
+
+function shuffle(array) {
+  let currentIndex = array.length;
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+}
+// let arr = [2, 11, 37, 42];
+// shuffle(arr);
+// console.log(arr);
 
 function loadScript(src, callback) {
     const script = document.createElement("script");
