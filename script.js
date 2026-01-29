@@ -1,12 +1,18 @@
 console.log("in script.js");
 
+if(document.cookie != ""){
+    lightmode.checked = true;
+}
+
 populate();
 
 lightmode.addEventListener("change", () => {
     if(lightmode.checked){
         content.style.backgroundColor = "rgba(205, 205, 205, 1)";
+        document.cookie = "-";
     } else {
         content.style.backgroundColor = "";
+        document.cookie = "";
     }
     populate();
 });
