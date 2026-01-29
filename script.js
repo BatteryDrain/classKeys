@@ -13,7 +13,7 @@ lightmode.addEventListener("change", () => {
         document.cookie = "-";
     } else {
         content.style.backgroundColor = "";
-        document.cookie = "";
+        document.cookie = "seen=; path=/; max-age=0";
     }
     populate();
 });
