@@ -2,6 +2,7 @@ console.log("in script.js");
 
 if(document.cookie != ""){
     lightmode.checked = true;
+    content.style.backgroundColor = "rgba(205, 205, 205, 1)";
 }
 
 populate();
