@@ -1,6 +1,6 @@
 console.log("in script.js");
 
-if(document.cookie != ""){
+if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgba(205, 205, 205, 1)";
 }
@@ -8,15 +8,16 @@ if(document.cookie != ""){
 populate();
 
 lightmode.addEventListener("change", () => {
-    if(lightmode.checked){
+    if (lightmode.checked) {
         content.style.backgroundColor = "rgba(205, 205, 205, 1)";
-        document.cookie = "-";
+        document.cookie = "-=true; path=/";
     } else {
         content.style.backgroundColor = "";
         document.cookie = "-=; Max-Age=0; path=/";
     }
     populate();
 });
+
 
 function populate() {
     content.replaceChildren();
