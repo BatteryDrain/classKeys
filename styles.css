@@ -88,6 +88,11 @@ input:checked + .slider::before {
     padding: 2px;
 }
 
+#filters {
+    background-color: var(--grey);
+    padding-top: 120px;
+}
+
 #angle {
     position: fixed;
     width: 110%;
