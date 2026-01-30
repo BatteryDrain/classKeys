@@ -1,5 +1,3 @@
-console.log("in script.js");
-
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
