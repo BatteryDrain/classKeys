@@ -10,13 +10,12 @@ html, body {
     --blue: rgb(44, 161, 204);
     --grey: rgb(68, 72, 81);
     --lightGrey: rgb(128, 128, 128);
-    --navSwidth: 45px;
 }
 
 body {
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
-    background-color: var(--lightGrey);
+    background-color: var(--grey);
 }
 
 main {
@@ -90,7 +89,7 @@ input:checked + .slider::before {
 
 #filters {
     background-color: var(--grey);
-    padding-top: 140px;
+    padding-top: 90px;
     color: white;
     width: fit-content;
     margin-left: auto;
