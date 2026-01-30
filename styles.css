@@ -89,7 +89,7 @@ input:checked + .slider::before {
 
 #filters {
     background-color: var(--grey);
-    padding-top: 90px;
+    padding-top: 120px;
     color: white;
     width: fit-content;
     margin-left: auto;
@@ -175,6 +175,9 @@ p {
         z-index: 0;
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
+    }
+    #filters {
+        padding-top: 90px;
     }
 }
 
