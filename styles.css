@@ -90,7 +90,7 @@ input:checked + .slider::before {
 
 #filters {
     background-color: var(--grey);
-    padding-top: 120px;
+    padding-top: 140px;
 }
 
 #angle {
@@ -112,7 +112,7 @@ input:checked + .slider::before {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
-    padding-top: 120px;
+    /* padding-top: 120px; */
 }
 
 figcaption {
