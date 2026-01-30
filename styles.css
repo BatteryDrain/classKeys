@@ -92,8 +92,12 @@ input:checked + .slider::before {
     background-color: var(--grey);
     padding-top: 140px;
     color: white;
-    display: flex;
-    justify-content: flex-end;
+    width: fit-content;
+    margin-left: auto;
+}
+
+#filters div {
+    margin-left: auto;
 }
 
 #angle {
