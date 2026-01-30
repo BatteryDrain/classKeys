@@ -24,7 +24,7 @@ function populate() {
     for(let i=1; i<DATASORTED.length; i++){
         if(DATASORTED[i][2] != ""){
             place(i);
-            console.log(DATASORTED[i][1] + "," + DATASORTED[i][2])
+            console.log(DATASORTED[i][0] + "," + DATASORTED[i][2])
         }
         count.innerHTML = content.childElementCount;
     }
