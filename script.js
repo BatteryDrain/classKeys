@@ -96,6 +96,7 @@ function place(g) {
                 if(DATASORTED[g][5] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/Windows.svg.png";
+                    pic.alt = "windows logo";
                     pic.width = "20";
                     pic.height = "20";
                     div2.appendChild(pic);
@@ -103,6 +104,7 @@ function place(g) {
                 if(DATASORTED[g][6] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/Apple_white.svg.png";
+                    pic.alt = "apple logo";
                     pic.width = "20";
                     pic.height = "20";
                     div2.appendChild(pic);
@@ -110,6 +112,7 @@ function place(g) {
                 if(DATASORTED[g][7] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/linux-white-logo.png";
+                    pic.alt = "linux logo";
                     pic.width = "20";
                     pic.height = "20";
                     div2.appendChild(pic);
