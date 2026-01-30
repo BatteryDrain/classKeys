@@ -93,7 +93,7 @@ input:checked + .slider::before {
     padding-top: 140px;
     color: white;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 #angle {
