@@ -21,7 +21,7 @@ lightmode.addEventListener("change", () => {
 
 function populate() {
     content.replaceChildren();
-    for(let i=1; i<DATASORTED.length; i++){
+    for(let i=0; i<DATASORTED.length; i++){
         if(DATASORTED[i][2] != ""){
             place(i);
         }
