@@ -182,4 +182,7 @@ p {
     #angle {
         height: 150px;
     }
+    #filters {
+        padding-top: 60px;
+    }
 }
