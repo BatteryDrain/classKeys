@@ -157,6 +157,10 @@ button {
     height: fit-content;
 }
 
+#search {
+    border-radius: 15px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
