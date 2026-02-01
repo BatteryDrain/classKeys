@@ -28,6 +28,7 @@ sing.addEventListener("change", () => {
     } else {
         SING = true;
     }
+    populate();
 });
 
 multi.addEventListener("change", () => {
@@ -36,6 +37,7 @@ multi.addEventListener("change", () => {
     } else {
         MULTI = true;
     }
+    populate();
 });
 
 wind.addEventListener("change", () => {
@@ -44,6 +46,7 @@ wind.addEventListener("change", () => {
     } else {
         WIND = true;
     }
+    populate();
 });
 
 aple.addEventListener("change", () => {
@@ -52,6 +55,7 @@ aple.addEventListener("change", () => {
     } else {
         APLE = true;
     }
+    populate();
 });
 
 linx.addEventListener("change", () => {
@@ -60,6 +64,7 @@ linx.addEventListener("change", () => {
     } else {
         LINX = true;
     }
+    populate();
 });
 
 showOhide.addEventListener("click", () => {
@@ -79,7 +84,7 @@ function populate() {
     for(let i=0; i<DATASORTED.length; i++){
         if(DATASORTED[i][2] != ""){
             players = DATASORTED[i][4];
-            if(players == "b"){
+            if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
                 place(i);
             }
         }
