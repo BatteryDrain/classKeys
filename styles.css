@@ -168,7 +168,7 @@ p {
 
 @media screen and (min-width: 800px) {
     #logo {
-        width: 33vw;
+        width: 20vw;
     }
 
     figure:hover {
