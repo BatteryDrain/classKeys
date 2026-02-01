@@ -95,6 +95,10 @@ input:checked + .slider::before {
     width: fit-content;
 }
 
+#filters div {
+    margin-top: 2px;
+}
+
 #angle {
     position: fixed;
     width: 110%;
