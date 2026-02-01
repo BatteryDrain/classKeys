@@ -114,7 +114,7 @@ input:checked + .slider::before {
 }
 
 #angle.more {
-    height: 33vh;
+    height: 34vh;
 }
 
 #content {

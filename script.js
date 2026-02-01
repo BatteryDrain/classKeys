@@ -1,3 +1,9 @@
+SING = true;
+MULT = true;
+WIND = true;
+APLE = true;
+LINX = true;
+
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
@@ -16,6 +22,45 @@ lightmode.addEventListener("change", () => {
     populate();
 });
 
+sing.addEventListener("change", () => {
+    if(SING){
+        SING = false;
+    } else {
+        SING = true;
+    }
+});
+
+mult.addEventListener("change", () => {
+    if(MULT){
+        MULT = false;
+    } else {
+        MULT = true;
+    }
+});
+
+wind.addEventListener("change", () => {
+    if(WIND){
+        WIND = false;
+    } else {
+        WIND = true;
+    }
+});
+
+aple.addEventListener("change", () => {
+    if(APLE){
+        APLE = false;
+    } else {
+        APLE = true;
+    }
+});
+
+linx.addEventListener("change", () => {
+    if(LINX){
+        LINX = false;
+    } else {
+        LINX = true;
+    }
+});
 
 showOhide.addEventListener("click", () => {
     angle.classList.toggle("more");
@@ -25,14 +70,18 @@ showOhide.addEventListener("click", () => {
     } else {
         showOhide.innerHTML = "hide filters";
     }
-
 });
+
+
 
 function populate() {
     content.replaceChildren();
     for(let i=0; i<DATASORTED.length; i++){
         if(DATASORTED[i][2] != ""){
-            place(i);
+            players = DATASORTED[i][4];
+            if(players == "b"){
+                place(i);
+            }
         }
         count.innerHTML = content.childElementCount;
     }
