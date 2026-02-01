@@ -24,6 +24,8 @@ main {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     z-index: 30;
     width: 100vw;
@@ -178,8 +180,13 @@ p {
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
+    
     #topBar {
         padding-top: 90px;
+    }
+
+    header {
+        flex-direction: row;
     }
 }
 
