@@ -9,6 +9,10 @@ if (document.cookie.includes("-=")) {
     content.style.backgroundColor = "rgb(205, 205, 205)";
 }
 
+he = window.innerHeight;
+
+angle.style.height = he/3 + "px";
+
 populate();
 
 lightmode.addEventListener("change", () => {
