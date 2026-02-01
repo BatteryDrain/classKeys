@@ -9,18 +9,6 @@ if (document.cookie.includes("-=")) {
     content.style.backgroundColor = "rgb(205, 205, 205)";
 }
 
-// window.addEventListener('resize', function() {
-//     if(angle.classList.contains("more")){
-//         he = window.innerHeight;
-//         he = 408 * Math.pow(base, he * 2 - 558) + 150;
-//         angle.style.height = he + "px";
-//     } else {
-//                 he = window.innerHeight;
-//         he = 408 * Math.pow(base, he * 1 - 558) + 150;
-//         angle.style.height = he + "px";
-//     }
-// });
-
 populate();
 
 lightmode.addEventListener("change", () => {
