@@ -50,6 +50,16 @@ multi.addEventListener("change", () => {
 
 wind.addEventListener("change", () => {
     if(WIND){
+        if(!APLE && !LINX){
+            num = randomIntFromInterval(1,2);
+            if(num == 1){
+                aple.checked = true;
+                APLE = true;
+            } else {
+                linx.checked = true;
+                LINX = true;
+            }
+        }
         WIND = false;
     } else {
         WIND = true;
@@ -59,6 +69,16 @@ wind.addEventListener("change", () => {
 
 aple.addEventListener("change", () => {
     if(APLE){
+        if(!WIND && !LINX){
+            num = randomIntFromInterval(1,2);
+            if(num == 1){
+                wind.checked = true;
+                WIND = true;
+            } else {
+                linx.checked = true;
+                LINX = true;
+            }
+        }
         APLE = false;
     } else {
         APLE = true;
@@ -68,6 +88,16 @@ aple.addEventListener("change", () => {
 
 linx.addEventListener("change", () => {
     if(LINX){
+        if(!WIND && !APLE){
+            num = randomIntFromInterval(1,2);
+            if(num == 1){
+                wind.checked = true;
+                WIND = true;
+            } else {
+                aple.checked = true;
+                APLE = true;
+            }
+        }
         LINX = false;
     } else {
         LINX = true;
@@ -203,4 +233,12 @@ function findPicWithID(ID){
         if(PICS[i][0] == ID){return PICS[i][1];}
     }
     return null;
+}
+
+// Source - https://stackoverflow.com/a/7228322
+// Posted by Francisc, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-02-01, License - CC BY-SA 4.0
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
