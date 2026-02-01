@@ -8,10 +8,11 @@ if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
 }
+
 window.addEventListener('resize', function() {
-    he = window.innerHeight;
+    he = Math.pow(1.002, 3) + 558;
     
-    angle.style.height = he/3 + "px";
+    angle.style.height = he/ + "px";
 });
 
 populate();
