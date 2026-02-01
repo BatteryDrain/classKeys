@@ -15,49 +15,53 @@
    <body>
        <main>
             <header>
-                <img src="assets/ClassKeys 1.webp" alt="Class Keys logo" width="300" height="95.3" id="logo">
-
                 <div class="row">
-                    <p>lightmode</p>
-                    <label class="switch">
-                        <input type="checkbox" id="lightmode">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-
-
-                <div id="filters" class="col">
+                    <img src="assets/ClassKeys 1.webp" alt="Class Keys logo" width="300" height="95.3" id="logo">
                     <div class="row">
-                        <img src="assets/Windows.svg.png" alt="windows icon" width="20" height="20">
+                        <p>lightmode</p>
                         <label class="switch">
-                            <input type="checkbox" id="sing" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        <img src="assets/Apple_white.svg.png" alt="apple icon" width="20" height="20">
-                        <label class="switch">
-                            <input type="checkbox" id="multi" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        <img src="assets/linux-white-logo.png" alt="linux icon" width="20" height="20">
-                        <label class="switch">
-                            <input type="checkbox" id="multi" checked>
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-
-                    <div class="row">
-                        <p>singleplayer</p>
-                        <label class="switch">
-                            <input type="checkbox" id="sing" checked>
-                            <span class="slider round"></span>
-                        </label>
-                        <p>multiplayer</p>
-                        <label class="switch">
-                            <input type="checkbox" id="multi" checked>
+                            <input type="checkbox" id="lightmode">
                             <span class="slider round"></span>
                         </label>
                     </div>
                 </div>
+                <div id="filters" class="hide">
+                    <input type="text">
+    
+                    <div class="col">
+                        <div class="row">
+                            <img src="assets/Windows.svg.png" alt="windows icon" width="20" height="20">
+                            <label class="switch">
+                                <input type="checkbox" id="sing" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <img src="assets/Apple_white.svg.png" alt="apple icon" width="20" height="20">
+                            <label class="switch">
+                                <input type="checkbox" id="multi" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <img src="assets/linux-white-logo.png" alt="linux icon" width="20" height="20">
+                            <label class="switch">
+                                <input type="checkbox" id="multi" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+    
+                        <div class="row">
+                            <p>singleplayer</p>
+                            <label class="switch">
+                                <input type="checkbox" id="sing" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <p>multiplayer</p>
+                            <label class="switch">
+                                <input type="checkbox" id="multi" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
                 <p id="count"></p>
             </header>
             <div id="angle"></div>

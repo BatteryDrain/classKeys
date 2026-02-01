@@ -163,12 +163,6 @@ p {
     display: none;
 }
 
-@media screen and (min-width: 655px) {
-    header {
-        flex-direction: row;
-    }
-}
-
 @media screen and (min-width: 800px) {
     #logo {
         width: 30vw;
