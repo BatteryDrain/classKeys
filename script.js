@@ -8,10 +8,11 @@ if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
 }
-
-he = window.innerHeight;
-
-angle.style.height = he/3 + "px";
+window.addEventListener('resize', function() {
+    he = window.innerHeight;
+    
+    angle.style.height = he/3 + "px";
+});
 
 populate();
 
