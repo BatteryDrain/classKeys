@@ -28,6 +28,7 @@ header {
     z-index: 30;
     width: 100vw;
     color: white;
+    padding-top: 1vw;
 
 }
 
@@ -170,6 +171,7 @@ p {
     #logo {
         width: 30vw;
         margin: 1vw;
+        margin-top: 0;
     }
 
     figure:hover {
