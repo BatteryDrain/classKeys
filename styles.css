@@ -95,11 +95,6 @@ input:checked + .slider::before {
     width: fit-content;
 }
 
-#topBar {
-    padding-top: 120px;
-}
-
-
 #angle {
     position: fixed;
     width: 110%;
@@ -115,6 +110,7 @@ input:checked + .slider::before {
 }
 
 #content {
+    padding-top: 120px;
     background-color: var(--grey);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
@@ -180,7 +176,7 @@ p {
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
 
-    #topBar {
+    #content {
         padding-top: 90px;
     }
 
@@ -193,7 +189,7 @@ p {
     #angle {
         height: 150px;
     }
-    #topBar {
+    #content {
         padding-top: 60px;
     }
 }
