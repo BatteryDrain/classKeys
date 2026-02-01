@@ -109,6 +109,10 @@ input:checked + .slider::before {
     pointer-events: none;
 }
 
+#angle.more {
+    height: 50vh;
+}
+
 #content {
     padding-top: 120px;
     background-color: var(--grey);

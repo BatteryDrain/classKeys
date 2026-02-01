@@ -1,7 +1,6 @@
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
-    topBar.style.backgroundColor = "rgb(205, 205, 205)";
 }
 
 populate();
@@ -9,16 +8,25 @@ populate();
 lightmode.addEventListener("change", () => {
     if (lightmode.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
-        topBar.style.backgroundColor = "rgb(205, 205, 205)";
         document.cookie = "-=true; path=/";
     } else {
         content.style.backgroundColor = "";
-        topBar.style.backgroundColor = "";
         document.cookie = "-=; Max-Age=0; path=/";
     }
     populate();
 });
 
+
+showOhide.addEventListener("click", () => {
+    angle.classList.toggle("more");
+    filters.classList.toggle("hide");
+    if(filters.classList.contains("hide")){
+        showOhide.innerHTML = "show filters";
+    } else {
+        showOhide.innerHTML = "hide filters";
+    }
+
+});
 
 function populate() {
     content.replaceChildren();
