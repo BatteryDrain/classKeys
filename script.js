@@ -2,8 +2,6 @@ if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
     topBar.style.backgroundColor = "rgb(205, 205, 205)";
-    // filters.style.backgroundColor = "rgb(205, 205, 205)";
-    // filters.style.color = "rgb(0, 0, 0)";
 }
 
 populate();
@@ -12,14 +10,10 @@ lightmode.addEventListener("change", () => {
     if (lightmode.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
         topBar.style.backgroundColor = "rgb(205, 205, 205)";
-        // filters.style.backgroundColor = "rgb(205, 205, 205)";
-        // filters.style.color = "rgb(0, 0, 0)";
         document.cookie = "-=true; path=/";
     } else {
         content.style.backgroundColor = "";
         topBar.style.backgroundColor = "";
-        // filters.style.backgroundColor = "";
-        // filters.style.color = "";
         document.cookie = "-=; Max-Age=0; path=/";
     }
     populate();

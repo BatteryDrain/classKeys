@@ -93,7 +93,6 @@ input:checked + .slider::before {
 #filters {
     color: white;
     width: fit-content;
-    margin-left: auto;
 }
 
 #topBar {
@@ -180,7 +179,7 @@ p {
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
-    
+
     #topBar {
         padding-top: 90px;
     }
