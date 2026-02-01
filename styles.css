@@ -118,7 +118,7 @@ input:checked + .slider::before {
 }
 
 #content {
-    padding-top: 120px;
+    padding-top: 150px;
     background-color: var(--grey);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
@@ -205,6 +205,6 @@ button {
         height: 150px;
     }
     #content {
-        padding-top: 60px;
+        padding-top: 90px;
     }
 }

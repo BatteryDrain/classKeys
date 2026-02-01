@@ -24,6 +24,10 @@ lightmode.addEventListener("change", () => {
 
 sing.addEventListener("change", () => {
     if(SING){
+        if(!MULTI){
+            multi.checked = true;
+            MULTI = true;
+        }
         SING = false;
     } else {
         SING = true;
@@ -33,6 +37,10 @@ sing.addEventListener("change", () => {
 
 multi.addEventListener("change", () => {
     if(MULTI){
+        if(!SING){
+            sing.checked = true;
+            SING = true;
+        }
         MULTI = false;
     } else {
         MULTI = true;
