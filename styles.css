@@ -89,16 +89,15 @@ input:checked + .slider::before {
 }
 
 #filters {
-    background-color: var(--grey);
-    padding-top: 120px;
     color: white;
     width: fit-content;
     margin-left: auto;
 }
 
-#filters div {
-    margin-left: auto;
+#topBar {
+    padding-top: 120px;
 }
+
 
 #angle {
     position: fixed;
@@ -179,7 +178,7 @@ p {
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
-    #filters {
+    #topBar {
         padding-top: 90px;
     }
 }
@@ -188,7 +187,7 @@ p {
     #angle {
         height: 150px;
     }
-    #filters {
+    #topBar {
         padding-top: 60px;
     }
 }
