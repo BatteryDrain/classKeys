@@ -1,5 +1,5 @@
 SING = true;
-MULT = true;
+MULTI = true;
 WIND = true;
 APLE = true;
 LINX = true;
@@ -30,11 +30,11 @@ sing.addEventListener("change", () => {
     }
 });
 
-mult.addEventListener("change", () => {
-    if(MULT){
-        MULT = false;
+multi.addEventListener("change", () => {
+    if(MULTI){
+        MULTI = false;
     } else {
-        MULT = true;
+        MULTI = true;
     }
 });
 
