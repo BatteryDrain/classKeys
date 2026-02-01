@@ -1,4 +1,5 @@
 if (document.cookie.includes("-=")) {
+    top = document.getElementById("top");
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
     top.style.backgroundColor = "rgb(205, 205, 205)";
@@ -8,6 +9,7 @@ if (document.cookie.includes("-=")) {
 populate();
 
 lightmode.addEventListener("change", () => {
+    top = document.getElementById("top");
     if (lightmode.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
         top.style.backgroundColor = "rgb(205, 205, 205)";
