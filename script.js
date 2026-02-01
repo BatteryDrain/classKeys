@@ -123,7 +123,9 @@ function populate() {
         if(DATASORTED[i][2] != ""){
             players = DATASORTED[i][4];
             if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
-                place(i);
+                if((WIND && DATASORTED[i][4] != "") || (APLE && DATASORTED[i][5] != "") || (LINX && DATASORTED[i][6] != "")){
+                    place(i);
+                }
             }
         }
         count.innerHTML = content.childElementCount;
