@@ -10,10 +10,15 @@ if (document.cookie.includes("-=")) {
 }
 
 window.addEventListener('resize', function() {
-    he = window.innerHeight;
-    he = 408 * Math.pow(base, he - 558) + 150;
-    
-    angle.style.height = he/ + "px";
+    if(angle.classList.contains("more")){
+        he = window.innerHeight;
+        he = 408 * Math.pow(base, he * 2 - 558) + 150;
+        angle.style.height = he + "px";
+    } else {
+                he = window.innerHeight;
+        he = 408 * Math.pow(base, he * 1 - 558) + 150;
+        angle.style.height = he + "px";
+    }
 });
 
 populate();
@@ -114,6 +119,11 @@ linx.addEventListener("change", () => {
 
 showOhide.addEventListener("click", () => {
     angle.classList.toggle("more");
+    if(angle.classList.contains("more")){
+        he = window.innerHeight;
+        he = 408 * Math.pow(base, he * 2 - 558) + 150;
+        angle.style.height = he + "px";
+    }
     filters.classList.toggle("hide");
     if(filters.classList.contains("hide")){
         showOhide.innerHTML = "show filters";
