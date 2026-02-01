@@ -123,7 +123,10 @@ function populate() {
         if(DATASORTED[i][2] != ""){
             players = DATASORTED[i][4];
             if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
-                if((WIND && DATASORTED[i][4] != "") || (APLE && DATASORTED[i][5] != "") || (LINX && DATASORTED[i][6] != "")){
+                w = (DATASORTED[i][4] != "");
+                a = (DATASORTED[i][5] != "");
+                l = (DATASORTED[i][6] != "");
+                if((WIND && w) && (APLE && a) && (LINX && l)){
                     place(i);
                 }
             }
