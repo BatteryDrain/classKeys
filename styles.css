@@ -153,6 +153,10 @@ p {
     margin: 0;
 }
 
+button {
+    height: fit-content;
+}
+
 .row {
     display: flex;
     flex-direction: row;
