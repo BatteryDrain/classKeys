@@ -119,11 +119,6 @@ linx.addEventListener("change", () => {
 
 showOhide.addEventListener("click", () => {
     angle.classList.toggle("more");
-    if(angle.classList.contains("more")){
-        he = window.innerHeight;
-        he = 408 * Math.pow(base, he * 2 - 558) + 150;
-        angle.style.height = he + "px";
-    }
     filters.classList.toggle("hide");
     if(filters.classList.contains("hide")){
         showOhide.innerHTML = "show filters";
