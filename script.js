@@ -10,7 +10,8 @@ if (document.cookie.includes("-=")) {
 }
 
 window.addEventListener('resize', function() {
-    he = Math.pow(1.002, 3) + 558;
+    he = window.innerHeight;
+    he = 408 * Math.pow(base, he - 558) + 150;
     
     angle.style.height = he/ + "px";
 });
