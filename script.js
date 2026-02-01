@@ -126,7 +126,7 @@ function populate() {
                 w = (DATASORTED[i][5] != "");
                 a = (DATASORTED[i][6] != "");
                 l = (DATASORTED[i][7] != "");
-                if(    (!WIND || w) || (!APLE || a) || (!LINX || l)){
+                if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
                     place(i);
                 }
             }
