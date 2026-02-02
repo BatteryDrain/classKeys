@@ -58,9 +58,6 @@ function shuffle(array) {
       array[randomIndex], array[currentIndex]];
   }
 }
-// let arr = [2, 11, 37, 42];
-// shuffle(arr);
-// console.log(arr);
 
 function loadScript(src, callback) {
     const script = document.createElement("script");
