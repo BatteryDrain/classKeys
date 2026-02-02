@@ -31,11 +31,15 @@ header {
     width: 100vw;
     color: white;
     padding-top: 1vw;
+}
 
+#inner {
+    display: flex;
+    flex-direction: column;
 }
 
 #logo {
-    height: 15vh;
+    height: 10vh;
     width: auto;
     margin: 4px;
 }
@@ -159,8 +163,10 @@ p {
 
 button {
     height: fit-content;
+    width: fit-content;
     border-radius: 15px;
     border: 0;
+
 }
 
 #search {
@@ -198,6 +204,10 @@ button {
 
     #content {
         padding-top: 180px;
+    }
+
+    #inner {
+        flex-direction: row;
     }
 }
 
