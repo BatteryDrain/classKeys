@@ -95,6 +95,7 @@ input:checked + .slider::before {
 }
 
 #filters {
+    margin-left: 10px;
     color: white;
     width: fit-content;
 }
