@@ -86,7 +86,7 @@ input:checked + .slider::before {
     background-color: white;
     color: black;
     position: absolute;
-    right: 25px;
+    right: 0px;
     top: 0;
     margin: 0;
     height: fit-content;
@@ -118,7 +118,7 @@ input:checked + .slider::before {
 }
 
 #angle.more {
-    height: 34vh;
+    height: 40vh;
 }
 
 #content {
@@ -208,6 +208,15 @@ button {
 
     #inner {
         flex-direction: row;
+    }
+
+    #count {
+        right: 25px;
+        top: 0;
+    }
+
+    #angle.more {
+    height: 34vh;
     }
 }
 
