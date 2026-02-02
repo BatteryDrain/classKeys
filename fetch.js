@@ -40,9 +40,7 @@ function csvToBIGARRAY(csvString) {
 
     shuffle(DATASORTED);
 
-    loadScript("script.js", () => {
-
-    });
+    loadScript("script.js", () => {});
 }
 
 // Source - https://stackoverflow.com/a/2450976
