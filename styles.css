@@ -188,7 +188,7 @@ button {
     display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     #logo {
         height: 15vh;
         width: auto;
@@ -200,11 +200,7 @@ button {
         z-index: 0;
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
-    }
-
-    /* #content {
-        padding-top: 180px;
-    } */
+    } 
 
     #inner {
         flex-direction: row;
