@@ -109,7 +109,7 @@ input:checked + .slider::before {
     width: 110%;
     max-width: 200vw;
     height: 25vh;
-    top: -10%;
+    top: -12vh;
     left: -5%;
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
@@ -128,7 +128,6 @@ input:checked + .slider::before {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
-    /* padding-top: 120px; */
 }
 
 figcaption {
