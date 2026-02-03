@@ -195,6 +195,10 @@ button {
         margin-top: 0;
     }
 
+    #angle {
+        height: 20vh;
+    }
+
     figure:hover {
         z-index: 0;
         transform: scale(1.1);
