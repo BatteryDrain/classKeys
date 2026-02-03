@@ -85,9 +85,9 @@ input:checked + .slider::before {
 #count {
     background-color: white;
     color: black;
-    position: absolute;
+    /* position: absolute;
     right: 0px;
-    top: 0;
+    top: 0; */
     margin: 0;
     height: fit-content;
     border-radius: 15px;
@@ -207,7 +207,7 @@ button {
     }
 
     #count {
-        right: 25px;
+        right: 15px;
         top: 1vw;
     }
 
