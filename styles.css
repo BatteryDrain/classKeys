@@ -123,7 +123,7 @@ input:checked + .slider::before {
 }
 
 #content {
-    padding-top: 25vh;
+    padding-top: 20vh;
     background-color: var(--grey);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
