@@ -212,7 +212,7 @@ button {
 
     #count {
         right: 25px;
-        top: 0;
+        top: 1vw;
     }
 
     #angle.more {
