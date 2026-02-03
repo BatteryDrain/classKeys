@@ -196,7 +196,11 @@ button {
     }
 
     #angle {
-        height: 20vh;
+        height: 25vh;
+    }
+
+    #angle.more {
+        height: 37vh;
     }
 
     figure:hover {
