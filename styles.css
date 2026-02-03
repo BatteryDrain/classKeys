@@ -119,7 +119,7 @@ input:checked + .slider::before {
 }
 
 #angle.more {
-    height: 40vh;
+    height: 37vh;
 }
 
 #content {
@@ -200,9 +200,9 @@ button {
         height: 25vh;
     }
 
-    /* #angle.more {
-        height: 37vh;
-    } */
+    #angle.more {
+        height: 40vh;
+    }
 
     figure:hover {
         z-index: 0;
