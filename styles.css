@@ -189,8 +189,8 @@ button {
 
 @media screen and (min-width: 570px) {
     #logo {
-        height: 15vh;
-        width: auto;
+        width: 30vw;
+        height: auto;
         margin: 1vw;
         margin-top: 0;
     }
