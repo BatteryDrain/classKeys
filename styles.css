@@ -13,6 +13,7 @@ html, body {
 }
 
 body {
+    overscroll-behavior-y: none;
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
     background-color: var(--grey);
@@ -165,7 +166,7 @@ p {
 #Bangle {
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
-    min-height: 140px;
+    min-height: 30vh;
     width: 110vw;
 }
 
