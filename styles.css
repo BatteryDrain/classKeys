@@ -165,29 +165,33 @@ p {
 footer {
     height: 100px;
     position: relative;
-    overflow: hidden; /* hard stop: no scroll past footer */
+    overflow: hidden; /* prevents scrolling past footer */
 }
 
-/* wrapper to allow upward overflow only */
+/* wrapper allows content to escape upwards */
 footer .bangle-clip {
     position: absolute;
-    inset: 0;
-    overflow: visible;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible; /* ← this lets the top of #Bangle show */
     pointer-events: none;
 }
 
 #Bangle {
-    position: absolute;          /* TAKE IT OUT OF FLOW */
-    bottom: 0;
+    position: absolute;
+    bottom: 0;   /* sticks to footer bottom */
     left: -5vw;
 
     width: 110vw;
-    height: 30vh;
+    height: 140px; /* or whatever fits your design */
 
     background-color: var(--lightGrey);
     transform: rotate(-5deg);
     transform-origin: bottom left;
 }
+
 
 button {
     height: fit-content;
