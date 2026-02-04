@@ -2,6 +2,7 @@ SMALLARRAY = [];
 DATA = [[]];
 DATASORTED = [[]];
 DATARAND = [[]];
+DATANAME = [[]];
 MOVIETAGS = [[]];
 WATCH = [[]];
 PICS = [];
