@@ -133,7 +133,8 @@ function populate() {
         }
         count.innerHTML = content.childElementCount;
         document.body.style.overflowY = "hidden";
-        document.body.style.overscrollBehaviorY = "none";
+        document.documentElement.style.overscrollBehaviorY = "none";
+
 
 
     }
