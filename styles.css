@@ -128,6 +128,7 @@ input:checked + .slider::before {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
+    padding-bottom: 2vw;
 }
 
 figcaption {
@@ -161,27 +162,17 @@ p {
     margin: 0;
 }
 
-footer {
-  height: 20vw;
-  position: relative;
-  overflow: hidden;
-}
-
 #Bangle {
-  position: absolute;
-  bottom: calc(-140px - 30vw);
-  left: -5vw;
-
-  width: 110vw;
-  height: 30vh;
-
-  background-color: var(--lightGrey);
-  transform: rotate(-5deg);
-  transform-origin: bottom left;
+    transform: rotate(-5deg);
+    background-color: var(--lightGrey);
+    min-height: 140px;
+    width: 110vw;
 }
 
-
-
+footer {
+    height: 100px;
+    clip-path: inset(-100% 0 0 0);
+}
 
 button {
     height: fit-content;
@@ -223,7 +214,7 @@ button {
     }
 
     #angle.more {
-        height: 38vh;
+        height: 34vh;
     }
 
     figure:hover {
