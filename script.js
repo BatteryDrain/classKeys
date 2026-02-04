@@ -135,7 +135,7 @@ function populate() {
                         place(i, DATARAND);
                     }
                 }
-                if(sort.value == "rand"){
+                if(sort.value == "name"){
                     if(DATANAME[i][2] != ""){
                         place(i, DATANAME);
                     }
