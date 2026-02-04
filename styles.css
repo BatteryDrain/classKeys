@@ -168,16 +168,6 @@ footer {
     overflow: hidden;
 }
 
-footer .bangle-clip {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    pointer-events: none;
-}
-
 #Bangle {
     position: absolute;
     bottom: -20vh;
