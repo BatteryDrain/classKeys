@@ -170,7 +170,7 @@ p {
 
 footer {
     height: 100px;
-    overflow-x: hidden;
+    clip-path: inset(-100% 0 0 0);
 }
 
 button {
