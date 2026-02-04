@@ -124,13 +124,13 @@ sort.addEventListener("change", () => {
 function populate() {
     content.replaceChildren();
     for(let i=0; i<DATASORTED.length; i++){
-        if(DATASORTED[i][2] != ""){
-            players = DATASORTED[i][4];
-            if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
-                w = (DATASORTED[i][5] != "");
-                a = (DATASORTED[i][6] != "");
-                l = (DATASORTED[i][7] != "");
-                if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
+        players = DATASORTED[i][4];
+        if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
+            w = (DATASORTED[i][5] != "");
+            a = (DATASORTED[i][6] != "");
+            l = (DATASORTED[i][7] != "");
+            if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
+                if(DATARAND[i][2] != ""){
                     place(i, DATARAND);
                 }
             }
