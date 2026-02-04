@@ -132,6 +132,7 @@ function populate() {
             }
         }
         count.innerHTML = content.childElementCount;
+        big.style.overflow-y = "hidden";
     }
 }
 
