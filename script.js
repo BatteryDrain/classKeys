@@ -133,10 +133,6 @@ function populate() {
         }
         count.innerHTML = content.childElementCount;
         document.body.style.overflowY = "hidden";
-        document.documentElement.style.overscrollBehaviorY = "none";
-
-
-
     }
 }
 

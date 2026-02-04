@@ -1,15 +1,19 @@
-*{
-   box-sizing: border-box;
-}
-
-html, body {
-    overflow-x: hidden;
-}
-
 :root {
     --blue: rgb(44, 161, 204);
     --grey: rgb(68, 72, 81);
     --lightGrey: rgb(128, 128, 128);
+}
+
+*{
+   box-sizing: border-box;
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body {
