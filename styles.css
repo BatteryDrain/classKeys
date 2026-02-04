@@ -169,8 +169,8 @@ p {
 }
 
 footer {
+    height: 100px;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 button {
