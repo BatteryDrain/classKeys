@@ -169,7 +169,7 @@ footer {
 
 #Bangle {
   position: absolute;
-  bottom: -140px;
+  bottom: calc(-140px - 30vw);
   left: -5vw;
 
   width: 110vw;
