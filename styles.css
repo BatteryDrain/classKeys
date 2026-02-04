@@ -128,7 +128,6 @@ input:checked + .slider::before {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     grid-gap: 1rem;
-    padding-bottom: 2vw;
 }
 
 figcaption {
@@ -163,14 +162,14 @@ p {
 }
 
 footer {
-  height: 100px;
+  height: 200px;
   position: relative;
   overflow: hidden;
 }
 
 #Bangle {
   position: absolute;
-  bottom: -150px;
+  bottom: -140px;
   left: -5vw;
 
   width: 110vw;
