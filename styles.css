@@ -4,7 +4,6 @@
 
 html, body {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 :root {
@@ -162,11 +161,16 @@ p {
     margin: 0;
 }
 
-footer {
-    transform: rotate(5deg);
+#Bangle {
+    transform: rotate(-5deg);
     background-color: var(--lightGrey);
     min-height: 40px;
     width: 110vw;
+}
+
+footer {
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 button {
