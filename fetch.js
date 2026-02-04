@@ -42,6 +42,7 @@ function csvToBIGARRAY(csvString) {
 
     for(i=0; i<DATASORTED.length; i++){
         DATARAND.push(DATASORTED[i]);
+        DATANAME.push(DATASORTED[i]);
     }
 
     shuffle(DATARAND);
