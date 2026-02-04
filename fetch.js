@@ -1,6 +1,7 @@
 SMALLARRAY = [];
 DATA = [[]];
 DATASORTED = [[]];
+DATARAND = [[]];
 MOVIETAGS = [[]];
 WATCH = [[]];
 PICS = [];
@@ -38,7 +39,11 @@ function csvToBIGARRAY(csvString) {
 
     DATASORTED.splice(0, 1);
 
-    shuffle(DATASORTED);
+    for(i=0; i<DATASORTED.length; i++){
+        DATARAND.push(DATASORTED[i]);
+    }
+
+    shuffle(DATARAND);
 
     loadScript("script.js", () => {});
 }
