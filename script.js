@@ -130,8 +130,19 @@ function populate() {
             a = (DATASORTED[i][6] != "");
             l = (DATASORTED[i][7] != "");
             if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                if(DATARAND[i][2] != ""){
-                    place(i, DATARAND);
+                if(sort.value == "rand"){
+                    if(DATARAND[i][2] != ""){
+                        place(i, DATARAND);
+                    }
+                }
+                if(sort.value == "rand"){
+                    if(DATANAME[i][2] != ""){
+                        place(i, DATANAME);
+                    }
+                } else {
+                    if(DATASORTED[i][2] != ""){
+                        place(i, DATASORTED);
+                    }
                 }
             }
         }
