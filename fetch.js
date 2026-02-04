@@ -2,6 +2,7 @@ SMALLARRAY = [];
 DATA = [[]];
 DATASORTED = [[]];
 DATARAND = [[]];
+DATANAME = [[]];
 MOVIETAGS = [[]];
 WATCH = [[]];
 PICS = [];
@@ -41,9 +42,12 @@ function csvToBIGARRAY(csvString) {
 
     for(i=0; i<DATASORTED.length; i++){
         DATARAND.push(DATASORTED[i]);
+        DATANAME.push(DATASORTED[i]);
     }
 
     shuffle(DATARAND);
+
+    organizeN(DATANAME);
 
     loadScript("script.js", () => {});
 }
@@ -67,4 +71,20 @@ function loadScript(src, callback) {
     script.src = src;
     script.onload = callback;
     document.body.appendChild(script);
+}
+
+function organizeN(list) {
+    // bubble sort for names (A–Z)
+    for (var i = 0; i < list.length; i++) {
+
+        for (var j = 0; j < (list.length - i - 1); j++) {
+
+            if (list[j][1].toLowerCase() > list[j + 1][1].toLowerCase()) {
+
+                temp = list[j];
+                list[j] = list[j + 1];
+                list[j + 1] = temp;
+            }
+        }
+    }
 }
