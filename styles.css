@@ -15,7 +15,7 @@ html, body {
 body {
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
-    background-color: var(--grey);
+    background-color: var(--lightGrey);
 }
 
 main {
