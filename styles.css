@@ -13,7 +13,6 @@ html, body {
 }
 
 body {
-    overscroll-behavior-y: none;
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
     background-color: var(--grey);
