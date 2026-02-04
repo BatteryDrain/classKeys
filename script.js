@@ -115,6 +115,10 @@ showOhide.addEventListener("click", () => {
     }
 });
 
+sort.addEventListener("change", () => {
+    populate();
+});
+
 
 
 function populate() {
@@ -127,7 +131,7 @@ function populate() {
                 a = (DATASORTED[i][6] != "");
                 l = (DATASORTED[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                    place(i);
+                    place(i, DATARAND);
                 }
             }
         }
@@ -137,10 +141,10 @@ function populate() {
 }
 
 
-function place(g) {
+function place(g, data) {
     const fig = document.createElement('figure');
         const figC = document.createElement('figcaption');
-            figC.innerHTML = DATASORTED[g][1];
+            figC.innerHTML = data[g][1];
             if(lightmode.checked){
                 figC.style.color = "rgb(0,0,0)";
             }
@@ -148,10 +152,10 @@ function place(g) {
 
         const foto = document.createElement("img");
             foto.classList.add("foto");
-            foto.alt = "game cover for " + DATASORTED[g][1];
-            pict = DATASORTED[g][3];
+            foto.alt = "game cover for " + data[g][1];
+            pict = data[g][3];
             if (pict == "") {
-                temp = findPicWithID(DATASORTED[g][0]);
+                temp = findPicWithID(data[g][0]);
                 if (!temp) {
                     console.error("no steam code could be found for ID = " + g - 1);
                 } else {
@@ -162,14 +166,14 @@ function place(g) {
 
                     foto.onerror = () => {
                         console.warn("Image failed:", foto.src);
-                        console.error("no picture could be found, or assumed for game id " + DATASORTED[g][0]);
+                        console.error("no picture could be found, or assumed for game id " + data[g][0]);
                     };
                 }
             } else {
                 foto.src = pict;
             }
             foto.style.backgroundColor = "rgb(0, 0, 0)";
-            foto.setAttribute("onclick", "goToLink(" + DATASORTED[g][0] + ")");
+            foto.setAttribute("onclick", "goToLink(" + data[g][0] + ")");
             foto.loading = "lazy";
             foto.decoding = "async";
             fig.appendChild(foto);
@@ -179,17 +183,17 @@ function place(g) {
                 if(lightmode.checked){
                     p.style.color = "rgb(0,0,0)";
                 }
-                if(DATASORTED[g][4] == "s"){
+                if(data[g][4] == "s"){
                     p.innerHTML = "singleplayer";
                 } else {
-                    if(DATASORTED[g][4] == "b"){
+                    if(data[g][4] == "b"){
                         p.innerHTML = "multiplayer & singleplayer";
                     } else {
-                        if(DATASORTED[g][4] == "m"){
+                        if(data[g][4] == "m"){
                             p.innerHTML = "multiplayer";
                         } else {
                             p.innerHTML = "error";
-                            console.error("singleplayer? not entered on game id " + DATASORTED[g][0]);
+                            console.error("singleplayer? not entered on game id " + data[g][0]);
                         }
                     }
                 }
@@ -197,7 +201,7 @@ function place(g) {
             div2 = document.createElement("div");
                 div2.classList.add("row");
                 div2.classList.add("div2");
-                if(DATASORTED[g][5] != ""){
+                if(data[g][5] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/Windows.svg.png";
                     pic.alt = "windows logo";
@@ -205,7 +209,7 @@ function place(g) {
                     pic.height = "20";
                     div2.appendChild(pic);
                 }
-                if(DATASORTED[g][6] != ""){
+                if(data[g][6] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/Apple_white.svg.png";
                     pic.alt = "apple logo";
@@ -213,7 +217,7 @@ function place(g) {
                     pic.height = "20";
                     div2.appendChild(pic);
                 }
-                if(DATASORTED[g][7] != ""){
+                if(data[g][7] != ""){
                     const pic = document.createElement("img");
                     pic.src = "assets/linux-white-logo.png";
                     pic.alt = "linux logo";
