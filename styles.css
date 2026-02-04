@@ -119,7 +119,7 @@ input:checked + .slider::before {
 }
 
 #angle.more {
-    height: 37vh;
+    height: 40vh;
 }
 
 #content {
@@ -159,6 +159,13 @@ figure p {
 
 p {
     margin: 0;
+}
+
+footer {
+    transform: rotate(5deg);
+    background-color: var(--lightGrey);
+    min-height: 40px;
+    width: 110vw;
 }
 
 button {
@@ -201,7 +208,7 @@ button {
     }
 
     #angle.more {
-        height: 40vh;
+        height: 34vh;
     }
 
     figure:hover {
@@ -216,10 +223,6 @@ button {
 
     #count {
         margin-left: 10px;
-    }
-
-    #angle.more {
-    height: 34vh;
     }
 }
 
