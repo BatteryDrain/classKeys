@@ -165,12 +165,12 @@ p {
 footer {
   height: 100px;
   position: relative;
-  overflow: hidden; /* real clip wall */
+  overflow: hidden;
 }
 
 #Bangle {
   position: absolute;
-  bottom: 0;
+  bottom: -150px;
   left: -5vw;
 
   width: 110vw;
