@@ -134,14 +134,15 @@ function populate() {
                     if(DATARAND[i][2] != ""){
                         place(i, DATARAND);
                     }
-                }
-                if(sort.value == "name"){
-                    if(DATANAME[i][2] != ""){
-                        place(i, DATANAME);
-                    }
                 } else {
-                    if(DATASORTED[i][2] != ""){
-                        place(i, DATASORTED);
+                    if(sort.value == "name"){
+                        if(DATANAME[i][2] != ""){
+                            place(i, DATANAME);
+                        }
+                    } else {
+                        if(DATASORTED[i][2] != ""){
+                            place(i, DATASORTED);
+                        }
                     }
                 }
             }
@@ -244,7 +245,7 @@ function place(g, data) {
 function goToLink(number){
     for(index=0; index<DATA.length; index++){
         if(DATA[index][0] == number){
-            window.open(DATA[index][2], "_self");
+            window.open(DATA[index][2], "_blank");
         }
     }
 }
