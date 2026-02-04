@@ -162,17 +162,23 @@ p {
     margin: 0;
 }
 
+footer {
+    height: 100px;
+    position: relative;
+    overflow: clip; 
+    overflow-clip-margin: 100px; 
+}
+
 #Bangle {
     transform: rotate(-5deg);
     background-color: var(--lightGrey);
     min-height: 140px;
     width: 110vw;
+    position: absolute;
+    top: 0;
+    left: -5vw;
 }
 
-footer {
-    height: 100px;
-    clip-path: inset(-100% 0 0 0);
-}
 
 button {
     height: fit-content;
