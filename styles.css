@@ -173,7 +173,7 @@ footer {
   left: -5vw;
 
   width: 110vw;
-  height: 140px;
+  height: 30vh;
 
   background-color: var(--lightGrey);
   transform: rotate(-5deg);
