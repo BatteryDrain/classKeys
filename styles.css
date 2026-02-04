@@ -163,28 +163,24 @@ p {
 }
 
 footer {
-    height: 100px; /* Keep your intended height */
-    position: relative;
-    /* 1. overflow: clip stops the element from being a "scroll container" */
-    overflow: clip; 
-    /* 2. Allows content to show ABOVE the footer without adding scroll space */
-    overflow-clip-margin: 100px; 
+  height: 100px;
+  position: relative;
+  overflow: hidden; /* real clip wall */
 }
 
 #Bangle {
-    /* 3. absolute takes it out of the layout flow so it doesn't push the footer down */
-    position: absolute;
-    bottom: 0; 
-    left: -5vw; /* Offset for the 110vw width */
-    
-    transform: rotate(-5deg);
-    /* 4. Ensure it starts exactly at the bottom of the footer */
-    transform-origin: bottom left; 
-    
-    background-color: var(--lightGrey);
-    min-height: 140px;
-    width: 110vw;
+  position: absolute;
+  bottom: 0;
+  left: -5vw;
+
+  width: 110vw;
+  height: 140px;
+
+  background-color: var(--lightGrey);
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
 }
+
 
 
 
