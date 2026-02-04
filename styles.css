@@ -162,7 +162,7 @@ p {
 }
 
 footer {
-  height: 200px;
+  height: 20vw;
   position: relative;
   overflow: hidden;
 }
@@ -223,7 +223,7 @@ button {
     }
 
     #angle.more {
-        height: 34vh;
+        height: 38vh;
     }
 
     figure:hover {
