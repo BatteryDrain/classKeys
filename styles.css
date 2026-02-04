@@ -199,6 +199,11 @@ button {
     border: 0;
 }
 
+#sort {
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
 .row {
     display: flex;
     flex-direction: row;
