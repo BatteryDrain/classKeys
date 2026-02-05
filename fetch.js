@@ -50,6 +50,8 @@ function csvToBIGARRAY(csvString) {
 
     shuffle(DATARAND);
 
+    console.log("RAND" + DATARAND.length);
+
     loadScript("script.js", () => {});
 }
 
