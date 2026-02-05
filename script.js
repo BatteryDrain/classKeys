@@ -124,35 +124,31 @@ sort.addEventListener("change", () => {
 function populate() {
     content.replaceChildren();
     if(sort.value == "rand"){
-        if(DATARAND[i][2] != ""){
-            preplace(DATARAND);
-        }
+        preplace(DATARAND);
     } else {
         if(sort.value == "name"){
-            if(DATANAME[i][2] != ""){
-                preplace(DATANAME);
-            }
-        } else {
-            if(DATASORTED[i][2] != ""){
-                preplace(DATASORTED);
-            }
+            preplace(DATANAME);
+        } else { 
+            preplace(DATASORTED);
         }
     }
+    count.innerHTML = content.childElementCount;
+    document.body.style.overflowY = "hidden";
 }
 
 function preplace(list) {
     for(let i=0; i<list.length; i++){
-        players = list[i][4];
-        if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
-            w = (list[i][5] != "");
-            a = (list[i][6] != "");
-            l = (list[i][7] != "");
-            if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                place(i, list);
+        if(DATASORTED[i][2] != ""){
+            players = list[i][4];
+            if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
+                w = (list[i][5] != "");
+                a = (list[i][6] != "");
+                l = (list[i][7] != "");
+                if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
+                    place(i, list);
+                }
             }
         }
-        count.innerHTML = content.childElementCount;
-        document.body.style.overflowY = "hidden";
     }
 }
 
