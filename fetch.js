@@ -48,7 +48,7 @@ function csvToBIGARRAY(csvString) {
     DATARAND.splice(0, 1);
     DATANAME.splice(0, 1);
 
-    // shuffle(DATARAND);
+    shuffle(DATARAND);
 
     loadScript("script.js", () => {});
 }
