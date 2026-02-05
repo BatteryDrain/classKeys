@@ -112,7 +112,7 @@ input:checked + .slider::before {
     position: fixed;
     width: 110%;
     max-width: 200vw;
-    height: 30vh;
+    height: 31vh;
     top: -12vh;
     left: -5%;
     transform: rotate(-5deg);
