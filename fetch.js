@@ -50,7 +50,18 @@ function csvToBIGARRAY(csvString) {
 
     shuffle(DATARAND);
 
-    console.log("RAND" + DATARAND.length);
+    for (var i = 0; i < DATANAME.length; i++) {
+
+        for (var j = 0; j < (DATANAME.length - i - 1); j++) {
+
+            if (DATANAME[j][1].toLowerCase() > DATANAME[j + 1][1].toLowerCase()) {
+
+                temp = DATANAME[j];
+                DATANAME[j] = DATANAME[j + 1];
+                DATANAME[j + 1] = temp;
+            }
+        }
+    }
 
     loadScript("script.js", () => {});
 }
