@@ -123,28 +123,32 @@ sort.addEventListener("change", () => {
 
 function populate() {
     content.replaceChildren();
-    for(let i=0; i<DATASORTED.length; i++){
-        players = DATASORTED[i][4];
+    if(sort.value == "rand"){
+        if(DATARAND[i][2] != ""){
+            preplace(DATARAND);
+        }
+    } else {
+        if(sort.value == "name"){
+            if(DATANAME[i][2] != ""){
+                preplace(DATANAME);
+            }
+        } else {
+            if(DATASORTED[i][2] != ""){
+                preplace(DATASORTED);
+            }
+        }
+    }
+}
+
+function preplace(list) {
+    for(let i=0; i<list.length; i++){
+        players = list[i][4];
         if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
-            w = (DATASORTED[i][5] != "");
-            a = (DATASORTED[i][6] != "");
-            l = (DATASORTED[i][7] != "");
+            w = (list[i][5] != "");
+            a = (list[i][6] != "");
+            l = (list[i][7] != "");
             if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                if(sort.value == "rand"){
-                    if(DATARAND[i][2] != ""){
-                        place(i, DATARAND);
-                    }
-                } else {
-                    if(sort.value == "name"){
-                        if(DATANAME[i][2] != ""){
-                            place(i, DATANAME);
-                        }
-                    } else {
-                        if(DATASORTED[i][2] != ""){
-                            place(i, DATASORTED);
-                        }
-                    }
-                }
+                place(i, list);
             }
         }
         count.innerHTML = content.childElementCount;
