@@ -138,7 +138,7 @@ function populate() {
 
 function preplace(list) {
     for(let i=0; i<list.length; i++){
-        if(DATASORTED[i][2] != ""){
+        if(list[i][2] != ""){
             players = list[i][4];
             if(players == "b" || (players == "s" && SING) || (players == "m" && MULTI)){
                 w = (list[i][5] != "");
