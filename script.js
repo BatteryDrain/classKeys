@@ -119,6 +119,10 @@ sort.addEventListener("change", () => {
     populate();
 });
 
+search.addEventListener("change", () => {
+    populate();
+});
+
 window.addEventListener('resize', function() {
     if(window.innerWidth > 800){
         document.documentElement.style.overscrollBehavior = "none";
