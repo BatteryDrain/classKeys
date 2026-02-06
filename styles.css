@@ -171,7 +171,7 @@ p {
     margin: 0;
 }
 
-footer {
+#foot {
     height: 10vw;
     position: relative;
     overflow: hidden;

@@ -7,6 +7,7 @@ LINX = true;
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
+    foot.style.backgroundColor = "rgb(205, 205, 205)";
 }
 
 populate();
@@ -14,9 +15,11 @@ populate();
 lightmode.addEventListener("change", () => {
     if (lightmode.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
+        foot.style.backgroundColor = "rgb(205, 205, 205)";
         document.cookie = "-=true; path=/";
     } else {
         content.style.backgroundColor = "";
+        foot.style.backgroundColor = "";
         document.cookie = "-=; Max-Age=0; path=/";
     }
     populate();
