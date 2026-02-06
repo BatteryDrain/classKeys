@@ -149,7 +149,9 @@ function preplace(list) {
                 a = (list[i][6] != "");
                 l = (list[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                    place(i, list);
+                    if(list[i][1].contains(search.value) && search.value != ""){
+                        place(i, list);
+                    }
                 }
             }
         }
