@@ -117,7 +117,7 @@ input:checked + .slider::before {
     position: fixed;
     width: 110%;
     max-width: 200vw;
-    height: 33vh;
+    height: 34vh;
     top: -12vh;
     left: -5%;
     transform: rotate(-5deg);
@@ -128,7 +128,7 @@ input:checked + .slider::before {
 }
 
 #angle.more {
-    height: 45vh;
+    height: 47vh;
 }
 
 #content {
