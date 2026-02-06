@@ -121,6 +121,7 @@ sort.addEventListener("change", () => {
 
 search.addEventListener("change", () => {
     populate();
+    console.log("search");
 });
 
 window.addEventListener('resize', function() {
