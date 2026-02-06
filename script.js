@@ -154,7 +154,8 @@ function preplace(list) {
                 a = (list[i][6] != "");
                 l = (list[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
-                    if(list[i][1].includes(search.value) || search.value == ""){
+                    name = list[i][1].toLowerCase();
+                    if(name.includes(search.value.toLowerCase()) || search.value == ""){
                         place(i, list);
                     }
                 }
