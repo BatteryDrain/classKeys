@@ -48,8 +48,8 @@ header {
 }
 
 #logo {
+    width: 31.481vh;
     height: 10vh;
-    /* width: auto; */
     margin: 4px;
 }
 
@@ -228,7 +228,7 @@ button {
 @media screen and (min-width: 570px) {
     #logo {
         width: 30vw;
-        height: auto;
+        height: 9.529vw;
         margin: 1vw;
         margin-top: 0;
     }
