@@ -214,7 +214,7 @@ function place(g, data) {
                     p.innerHTML = "singleplayer";
                 } else {
                     if(data[g][4] == "b"){
-                        p.innerHTML = "multiplayer & singleplayer";
+                        p.innerHTML = "singleplayer & multiplayer";
                     } else {
                         if(data[g][4] == "m"){
                             p.innerHTML = "multiplayer";
