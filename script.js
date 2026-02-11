@@ -112,6 +112,10 @@ showOhide.addEventListener("click", () => {
     toggleF();
 });
 
+pick.addEventListener("click", () => {
+    search.value = randomIntFromInterval(0, CAP.length);
+});
+
 sort.addEventListener("change", () => {
     populate();
 });
@@ -169,6 +173,7 @@ function populate() {
     }
     count.innerHTML = content.childElementCount;
     document.body.style.overflowY = "hidden";
+    let CAP = document.querySelectorAll("figure > figcaption");
 }
 
 function preplace(list) {
@@ -312,3 +317,25 @@ function toggleF(){
         showOhide.innerHTML = "hide filters";
     }
 }
+
+function scrollToRandomVisibleFigcaption() {
+    const captions = Array.from(document.querySelectorAll("figure > figcaption"));
+
+    const visible = captions.filter(el => {
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+    });
+
+    if (!visible.length) {
+        console.warn("No visible figcaptions.");
+        return;
+    }
+
+    const target = visible[Math.floor(Math.random() * visible.length)];
+
+    target.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
