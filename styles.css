@@ -194,9 +194,9 @@ p {
 }
 
 footer {
-    position: absolute;
+    /* position: absolute;
     bottom: 100px;
-    left: 0;
+    left: 0; */
     display: flex;
     transform: rotate(5deg);
     justify-content: end;
