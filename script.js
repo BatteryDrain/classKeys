@@ -140,7 +140,7 @@ window.addEventListener("wheel", (e) => {
 });
 
 window.addEventListener("keydown", (e) => {
-    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Space"];
+    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown"];
     if (keys.includes(e.code)) {
         if(!filters.classList.contains("hide")){
             toggleF();
