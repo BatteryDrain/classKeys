@@ -254,6 +254,10 @@ button {
     #count {
         margin-left: 10px;
     }
+
+    #Bangle {
+        position: fixed;
+    }
 }
 
 @media screen and (max-height: 558px) {
