@@ -84,6 +84,8 @@ showOhide.addEventListener("click", () => {
 });
 
 pick.addEventListener("click", () => {
+    search.value = "";
+    populate();
     temp = randomIntFromInterval(0, CAP.length);
     temp = CAP[temp].innerHTML
     search.value = temp;
