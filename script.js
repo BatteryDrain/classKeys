@@ -118,7 +118,7 @@ sort.addEventListener("change", () => {
 
 search.addEventListener("change", () => {
     populate();
-    console.log("search");
+    toggleF();
 });
 
 window.addEventListener('resize', function() {
