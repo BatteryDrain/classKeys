@@ -114,25 +114,43 @@ function markScrollIntent() {
     }, 200);
 }
 
+function tryTriggerFromInput() {
+    if (!pageCanScroll() && !gestureLock) {
+        gestureLock = true;
+
+        if (!filters.classList.contains("hide")) {
+            toggleF();
+        }
+
+        setTimeout(() => gestureLock = false, 250);
+    }
+}
+
+function pageCanScroll() {
+    return document.documentElement.scrollHeight > window.innerHeight;
+}
+
 window.addEventListener("wheel", () => {
     markScrollIntent();
+    tryTriggerFromInput();
 }, { passive: true });
 
 window.addEventListener("touchmove", () => {
     markScrollIntent();
+    tryTriggerFromInput();
 }, { passive: true });
 
 window.addEventListener("keydown", (e) => {
     const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Space"];
     if (keys.includes(e.code)) {
         markScrollIntent();
+        tryTriggerFromInput();
     }
 });
 
 window.addEventListener("scroll", () => {
-    if (!scrollIntent) return;
+    if (!scrollIntent || gestureLock) return;
 
-    if (gestureLock) return;
     gestureLock = true;
 
     if (!filters.classList.contains("hide")) {
@@ -144,6 +162,7 @@ window.addEventListener("scroll", () => {
         scrollIntent = false;
     }, 250);
 });
+
 
 function populate() {
     content.replaceChildren();
@@ -302,25 +321,3 @@ function toggleF(){
         showOhide.innerHTML = "hide filters";
     }
 }
-
-function scrollToRandomVisibleFigcaption() {
-    const captions = Array.from(document.querySelectorAll("figure > figcaption"));
-
-    const visible = captions.filter(el => {
-        const rect = el.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-    });
-
-    if (!visible.length) {
-        console.warn("No visible figcaptions.");
-        return;
-    }
-
-    const target = visible[Math.floor(Math.random() * visible.length)];
-
-    target.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-    });
-}
-
