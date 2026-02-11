@@ -101,34 +101,49 @@ window.addEventListener('resize', function() {
     }
 });
 
-window.addEventListener("scroll", () => {
-    if(!filters.classList.contains("hide")){
-        toggleF();
-    }
-});
+let scrollIntent = false;
+let intentTimeout = null;
+let gestureLock = false;
 
-window.addEventListener("wheel", (e) => {
-    if(!filters.classList.contains("hide")){
-        toggleF();
-    }
-});
+function markScrollIntent() {
+    scrollIntent = true;
 
-window.addEventListener("keydown", (e) => {
-    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown"];
-    if (keys.includes(e.code)) {
-        if(!filters.classList.contains("hide")){
-            toggleF();
-        }
-    }
-});
+    clearTimeout(intentTimeout);
+    intentTimeout = setTimeout(() => {
+        scrollIntent = false;
+    }, 200);
+}
 
-window.addEventListener("touchmove", (e) => {
-    if(!filters.classList.contains("hide")){
-        toggleF();
-    }
+window.addEventListener("wheel", () => {
+    markScrollIntent();
 }, { passive: true });
 
+window.addEventListener("touchmove", () => {
+    markScrollIntent();
+}, { passive: true });
 
+window.addEventListener("keydown", (e) => {
+    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Space"];
+    if (keys.includes(e.code)) {
+        markScrollIntent();
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (!scrollIntent) return;
+
+    if (gestureLock) return;
+    gestureLock = true;
+
+    if (!filters.classList.contains("hide")) {
+        toggleF();
+    }
+
+    setTimeout(() => {
+        gestureLock = false;
+        scrollIntent = false;
+    }, 250);
+});
 
 function populate() {
     content.replaceChildren();
