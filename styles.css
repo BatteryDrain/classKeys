@@ -194,9 +194,7 @@ p {
 }
 
 footer {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
+    width: 100vw;
 }
 
 button {
@@ -267,9 +265,8 @@ button {
     }
 
     footer {
-        position: absolute;
-        bottom: 100px;
-        left: 0;
+        position: fixed;
+        height: 10vw;
     }
 
     #pick {
