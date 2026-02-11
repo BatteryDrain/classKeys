@@ -3,6 +3,7 @@ MULTI = true;
 WIND = true;
 APLE = true;
 LINX = true;
+CAP = null;
 
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
@@ -178,7 +179,7 @@ function populate() {
     }
     count.innerHTML = content.childElementCount;
     document.body.style.overflowY = "hidden";
-    let CAP = document.querySelectorAll("figure > figcaption");
+    CAP = document.querySelectorAll("figure > figcaption");
 }
 
 function preplace(list) {
@@ -304,7 +305,6 @@ function findPicWithID(ID){
     }
     return null;
 }
-
 // Source - https://stackoverflow.com/a/7228322
 // Posted by Francisc, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-02-01, License - CC BY-SA 4.0
