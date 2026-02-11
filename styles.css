@@ -195,8 +195,15 @@ p {
 
 footer {
     position: absolute;
-    bottom: 0;
-    right: -100px;
+    bottom: 100px;
+    left: 0;
+    display: flex;
+    transform: rotate(5deg);
+    justify-content: end;
+}
+
+#pick {
+
 }
 
 button {
