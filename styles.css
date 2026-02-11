@@ -199,6 +199,10 @@ footer {
     height: 10vw;
 }
 
+#pick {
+    margin: 5px;
+}
+
 button {
     height: fit-content;
     width: fit-content;
@@ -268,7 +272,7 @@ button {
 
     footer {
         position: fixed;
-        height: 9vw;
+        height: 7vw;
         display: flex;
         z-index: 1;
     }
