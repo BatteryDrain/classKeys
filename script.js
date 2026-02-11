@@ -109,13 +109,7 @@ linx.addEventListener("change", () => {
 });
 
 showOhide.addEventListener("click", () => {
-    angle.classList.toggle("more");
-    filters.classList.toggle("hide");
-    if(filters.classList.contains("hide")){
-        showOhide.innerHTML = "show filters";
-    } else {
-        showOhide.innerHTML = "hide filters";
-    }
+    toggleF();
 });
 
 sort.addEventListener("change", () => {
@@ -130,6 +124,12 @@ search.addEventListener("change", () => {
 window.addEventListener('resize', function() {
     if(window.innerWidth > 800){
         document.documentElement.style.overscrollBehavior = "none";
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if(!filters.classList.contains("hide")){
+        toggleF();
     }
 });
 
@@ -278,4 +278,14 @@ function findPicWithID(ID){
 
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function toggleF(){
+        angle.classList.toggle("more");
+    filters.classList.toggle("hide");
+    if(filters.classList.contains("hide")){
+        showOhide.innerHTML = "show filters";
+    } else {
+        showOhide.innerHTML = "hide filters";
+    }
 }
