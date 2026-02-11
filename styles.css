@@ -195,7 +195,7 @@ p {
 
 footer {
     width: 100vw;
-    bottom: 10vw;
+    bottom: 0;
     height: 10vw;
 }
 
