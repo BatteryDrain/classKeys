@@ -52,14 +52,29 @@ multi.addEventListener("change", () => {
 });
 
 wind.addEventListener("change", () => {
+    if(WIND){
+        WIND = false;
+    } else {
+        WIND = true;
+    }
     populate();
 });
 
 aple.addEventListener("change", () => {
+    if(APLE){
+        APLE = false;
+    } else {
+        APLE = true;
+    }
     populate();
 });
 
 linx.addEventListener("change", () => {
+    if(LINX){
+        LINX = false;
+    } else {
+        LINX = true;
+    }
     populate();
 });
 
