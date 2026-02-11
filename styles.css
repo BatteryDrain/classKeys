@@ -19,7 +19,7 @@ html, body {
 body {
     margin: 0;
     font-family: "Mulish", Arial, sans-serif;
-    background-color: var(--lightGrey);
+    background-color: var(--grey);
 }
 
 main {
