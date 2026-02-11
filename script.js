@@ -52,59 +52,14 @@ multi.addEventListener("change", () => {
 });
 
 wind.addEventListener("change", () => {
-    if(WIND){
-        if(!APLE && !LINX){
-            num = randomIntFromInterval(1,2);
-            if(num == 1){
-                aple.checked = true;
-                APLE = true;
-            } else {
-                linx.checked = true;
-                LINX = true;
-            }
-        }
-        WIND = false;
-    } else {
-        WIND = true;
-    }
     populate();
 });
 
 aple.addEventListener("change", () => {
-    if(APLE){
-        if(!WIND && !LINX){
-            num = randomIntFromInterval(1,2);
-            if(num == 1){
-                wind.checked = true;
-                WIND = true;
-            } else {
-                linx.checked = true;
-                LINX = true;
-            }
-        }
-        APLE = false;
-    } else {
-        APLE = true;
-    }
     populate();
 });
 
 linx.addEventListener("change", () => {
-    if(LINX){
-        if(!WIND && !APLE){
-            num = randomIntFromInterval(1,2);
-            if(num == 1){
-                wind.checked = true;
-                WIND = true;
-            } else {
-                aple.checked = true;
-                APLE = true;
-            }
-        }
-        LINX = false;
-    } else {
-        LINX = true;
-    }
     populate();
 });
 
