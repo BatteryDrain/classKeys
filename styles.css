@@ -268,7 +268,9 @@ button {
 
     footer {
         position: fixed;
-        height: 10vw;
+        height: 9vw;
+        display: flex;
+        z-index: 1;
     }
 
     #pick {
