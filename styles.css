@@ -277,10 +277,11 @@ button {
         height: 7vw;
         display: flex;
         z-index: 1;
+        justify-content: flex-end;
     }
 
     #pick {
-        margin-left: auto;
+        
     }
 }
 
