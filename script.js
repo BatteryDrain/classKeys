@@ -84,8 +84,9 @@ showOhide.addEventListener("click", () => {
 });
 
 pick.addEventListener("click", () => {
-    search.value = randomIntFromInterval(0, CAP.length);
-    console.log("log");
+    temp = randomIntFromInterval(0, CAP.length);
+    search.value = temp;
+    console.log(temp);
 });
 
 sort.addEventListener("change", () => {
