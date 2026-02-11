@@ -133,6 +133,29 @@ window.addEventListener("scroll", () => {
     }
 });
 
+window.addEventListener("wheel", (e) => {
+    if(!filters.classList.contains("hide")){
+        toggleF();
+    }
+});
+
+window.addEventListener("keydown", (e) => {
+    const keys = ["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Space"];
+    if (keys.includes(e.code)) {
+        if(!filters.classList.contains("hide")){
+            toggleF();
+        }
+    }
+});
+
+window.addEventListener("touchmove", (e) => {
+    if(!filters.classList.contains("hide")){
+        toggleF();
+    }
+}, { passive: true });
+
+
+
 function populate() {
     content.replaceChildren();
     if(sort.value == "rand"){
