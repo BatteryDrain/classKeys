@@ -86,7 +86,7 @@ showOhide.addEventListener("click", () => {
 pick.addEventListener("click", () => {
     search.value = "";
     populate();
-    while(temp == undefined){
+    while(!temp == undefined){
         temp = randomIntFromInterval(0, CAP.length);
         temp = CAP[temp].innerHTML;
     }
