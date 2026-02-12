@@ -86,10 +86,11 @@ showOhide.addEventListener("click", () => {
 pick.addEventListener("click", () => {
     search.value = "";
     populate();
-    while(!temp == undefined){
-        temp = randomIntFromInterval(0, CAP.length);
-        temp = CAP[temp].innerHTML;
+    temp = randomIntFromInterval(0, CAP.length);
+    if(CAP[temp].innerHTML == undefined && temp > 0){
+        temp = temp - 1;
     }
+    temp = CAP[temp].innerHTML;
     search.value = temp;
     populate();
 });
