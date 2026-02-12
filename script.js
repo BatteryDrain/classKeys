@@ -87,9 +87,6 @@ pick.addEventListener("click", () => {
     search.value = "";
     populate();
     temp = randomIntFromInterval(0, (CAP.length - 1));
-    if(CAP[temp].innerHTML == undefined && temp > 0){
-        temp = temp - 1;
-    }
     temp = CAP[temp].innerHTML;
     search.value = temp;
     populate();
