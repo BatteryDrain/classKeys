@@ -225,8 +225,7 @@ button {
 }
 
 #big {
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
 }
 
 .big * {
@@ -299,6 +298,7 @@ button {
 
     #big {
         display: flex;
+        flex-wrap: wrap;
     }
 
     #mobile {
