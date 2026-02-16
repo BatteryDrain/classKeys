@@ -8,7 +8,7 @@ CAP = null;
 setconst();
 
 function setconst() {
-    if(window.innerWidth > 800){
+    if(window.innerWidth > 599){
         lightmodeSWT = document.getElementById("lightmode2");
         singSWT =document.getElementById("sing2");
         multiSWT = document.getElementById("multi2");

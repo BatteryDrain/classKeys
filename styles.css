@@ -256,7 +256,7 @@ input {
     display: none;
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 599px) {
     #logo {
         width: 30vw;
         height: 9.529vw;
