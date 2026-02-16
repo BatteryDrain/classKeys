@@ -202,10 +202,10 @@ window.addEventListener("scroll", () => {
 
 function populate() {
     content.replaceChildren();
-    if(sort.value == "rand"){
+    if(sortSEL.value == "rand"){
         preplace(DATARAND);
     } else {
-        if(sort.value == "name"){
+        if(sortSEL.value == "name"){
             preplace(DATANAME);
         } else { 
             preplace(DATASORTED);
