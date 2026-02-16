@@ -230,11 +230,11 @@ button {
 
 .big {
     margin: o;
-    height: 40px;
 }
 
 .big * {
     margin: o;
+    height: 20px;
 }
 
 .row {
