@@ -224,10 +224,10 @@ function preplace(list) {
                 l = (list[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
                     name = list[i][1].toLowerCase();
-                        if(name.includes(searchIN.value.toLowerCase()) || searchIN.value == ""){
-                            place(i, list);
-                        }
+                    if(name.includes(searchIN.value.toLowerCase()) || searchIN.value == ""){
+                        place(i, list);
                     }
+                    
                 }
             }
         }
