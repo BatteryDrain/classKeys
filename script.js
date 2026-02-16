@@ -5,6 +5,30 @@ APLE = true;
 LINX = true;
 CAP = null;
 
+setconst();
+
+function setconst() {
+    if(window.innerWidth > 800){
+        let lightmodeSWT = document.getElementById("lightmode2");
+        let singSWT =document.getElementById("sing2");
+        let multiSWT = document.getElementById("multi2");
+        let windSWT = document.getElementById("wind2");
+        let apleSWT = document.getElementById("aple2");
+        let linxSWT = document.getElementById("linx2");
+        let sortSEL = document.getElementById("sort2");
+        let searchIN = document.getElementById("search2");
+    } else {
+        let lightmodeSWT = document.getElementById("lightmode");
+        let singSWT =document.getElementById("sing");
+        let multiSWT = document.getElementById("multi");
+        let windSWT = document.getElementById("wind");
+        let apleSWT = document.getElementById("aple");
+        let linxSWT = document.getElementById("linx");
+        let sortSEL = document.getElementById("sort");
+        let searchIN = document.getElementById("search");
+    }
+}
+
 if (document.cookie.includes("-=")) {
     lightmode.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
@@ -14,7 +38,7 @@ if (document.cookie.includes("-=")) {
 
 populate();
 
-lightmode.addEventListener("change", () => {
+lightmodeSWT.addEventListener("change", () => {
     if (lightmode.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
         foot.style.backgroundColor = "rgb(205, 205, 205)";
@@ -29,10 +53,10 @@ lightmode.addEventListener("change", () => {
     populate();
 });
 
-sing.addEventListener("change", () => {
+singSWT.addEventListener("change", () => {
     if(SING){
         if(!MULTI){
-            multi.checked = true;
+            multiSWT.checked = true;
             MULTI = true;
         }
         SING = false;
@@ -42,10 +66,10 @@ sing.addEventListener("change", () => {
     populate();
 });
 
-multi.addEventListener("change", () => {
+multiSWT.addEventListener("change", () => {
     if(MULTI){
         if(!SING){
-            sing.checked = true;
+            singSWT.checked = true;
             SING = true;
         }
         MULTI = false;
@@ -55,7 +79,7 @@ multi.addEventListener("change", () => {
     populate();
 });
 
-wind.addEventListener("change", () => {
+windSWT.addEventListener("change", () => {
     if(WIND){
         WIND = false;
     } else {
@@ -64,7 +88,7 @@ wind.addEventListener("change", () => {
     populate();
 });
 
-aple.addEventListener("change", () => {
+apleSWT.addEventListener("change", () => {
     if(APLE){
         APLE = false;
     } else {
@@ -73,7 +97,7 @@ aple.addEventListener("change", () => {
     populate();
 });
 
-linx.addEventListener("change", () => {
+linxSWT.addEventListener("change", () => {
     if(LINX){
         LINX = false;
     } else {
@@ -95,11 +119,11 @@ pick.addEventListener("click", () => {
     populate();
 });
 
-sort.addEventListener("change", () => {
+sortSEL.addEventListener("change", () => {
     populate();
 });
 
-search.addEventListener("change", () => {
+searchIN.addEventListener("change", () => {
     populate();
     toggleF();
 });
@@ -108,6 +132,7 @@ window.addEventListener('resize', function() {
     if(window.innerWidth > 800){
         document.documentElement.style.overscrollBehavior = "none";
     }
+    setconst();
 });
 
 let scrollIntent = false;
@@ -199,12 +224,7 @@ function preplace(list) {
                 l = (list[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
                     name = list[i][1].toLowerCase();
-                    if(window.innerWidth > 800){
-                        if(name.includes(search2.value.toLowerCase()) || search.value == ""){
-                            place(i, list);
-                        }
-                    } else {
-                        if(name.includes(search.value.toLowerCase()) || search.value == ""){
+                        if(name.includes(searchIN.value.toLowerCase()) || searchIN.value == ""){
                             place(i, list);
                         }
                     }
