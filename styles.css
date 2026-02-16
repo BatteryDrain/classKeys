@@ -210,18 +210,20 @@ button {
     width: fit-content;
     border-radius: 15px;
     border: 0;
-
 }
 
-#search {
+select {
+    border-radius: 15px;
+    border: 0;
+}
+
+input {
     border-radius: 15px;
     border: 0;
 }
 
 #sort {
-    border-radius: 15px;
     margin-left: 5px;
-    border: 0;
 }
 
 #big {
