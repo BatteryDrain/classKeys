@@ -113,11 +113,11 @@ showOhide.addEventListener("click", () => {
 });
 
 pick.addEventListener("click", () => {
-    search.value = "";
+    searchIN.value = "";
     populate();
     temp = randomIntFromInterval(0, (CAP.length - 1));
     temp = CAP[temp].innerHTML;
-    search.value = temp;
+    searchIN.value = temp;
     populate();
 });
 
