@@ -32,7 +32,7 @@ function setconst() {
 }
 
 if (document.cookie.includes("-=")) {
-    lightmode.checked = true;
+    lightmodeSWT.checked = true;
     content.style.backgroundColor = "rgb(205, 205, 205)";
     foot.style.backgroundColor = "rgb(205, 205, 205)";
     document.body.style.backgroundColor = "rgb(205, 205, 205)";
@@ -41,7 +41,7 @@ if (document.cookie.includes("-=")) {
 populate();
 
 lightmodeSWT.addEventListener("change", () => {
-    if (lightmode.checked) {
+    if (lightmodeSWT.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
         foot.style.backgroundColor = "rgb(205, 205, 205)";
         document.body.style.backgroundColor = "rgb(205, 205, 205)";
@@ -241,7 +241,7 @@ function place(g, data) {
     const fig = document.createElement('figure');
         const figC = document.createElement('figcaption');
             figC.innerHTML = data[g][1];
-            if(lightmode.checked){
+            if(lightmodeSWT.checked){
                 figC.style.color = "rgb(0,0,0)";
             }
             fig.appendChild(figC);
@@ -276,7 +276,7 @@ function place(g, data) {
         const div = document.createElement("div");
             div.classList.add("row");
             const p = document.createElement("p");
-                if(lightmode.checked){
+                if(lightmodeSWT.checked){
                     p.style.color = "rgb(0,0,0)";
                 }
                 if(data[g][4] == "s"){
