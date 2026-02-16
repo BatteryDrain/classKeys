@@ -285,7 +285,9 @@ input {
 
     #count2 {
         margin-left: 10px;
-        background-color: grey;
+        background-color: white;
+        border-radius: 15px;
+        padding: 1px 2px;
     }
 
     #Bangle {
