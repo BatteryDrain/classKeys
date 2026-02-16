@@ -228,6 +228,7 @@ input {
 
 #big {
     display: none;
+    height: fit-content;
 }
 
 .big {
