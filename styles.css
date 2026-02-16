@@ -231,7 +231,7 @@ input {
 }
 
 .big {
-    margin: o;
+    margin: 0 5px;
 }
 
 .big * {
