@@ -233,6 +233,7 @@ input {
 
 .big {
     margin: 0 5px;
+    margin-bottom: 5px;
 }
 
 .big * {
