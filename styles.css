@@ -224,6 +224,10 @@ button {
     border: 0;
 }
 
+#big {
+    display: none;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -286,6 +290,14 @@ button {
 
     body {
         background-color: var(--grey);
+    }
+
+    #big {
+        display: flex;
+    }
+
+    #mobile {
+        display: none;
     }
 }
 
