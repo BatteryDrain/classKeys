@@ -228,6 +228,11 @@ button {
     display: none;
 }
 
+.big {
+    margin: o;
+    height: 40px;
+}
+
 .big * {
     margin: o;
 }
