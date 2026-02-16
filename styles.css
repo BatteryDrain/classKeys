@@ -215,6 +215,7 @@ button {
 select {
     border-radius: 15px;
     border: 0;
+    margin-left: 3px;
 }
 
 input {
