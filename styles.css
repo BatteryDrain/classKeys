@@ -225,7 +225,12 @@ button {
 }
 
 #big {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big * {
+    margin: o;
 }
 
 .row {
