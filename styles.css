@@ -281,6 +281,10 @@ input {
 
     #count {
         margin-left: 10px;
+    }
+
+    #count2 {
+        margin-left: 10px;
         background-color: grey;
     }
 
