@@ -221,6 +221,7 @@ select {
 input {
     border-radius: 15px;
     border: 0;
+    margin-left: 3px;
 }
 
 #sort {
