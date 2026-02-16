@@ -199,8 +199,14 @@ function preplace(list) {
                 l = (list[i][7] != "");
                 if((w && WIND == w) || (a && APLE == a) || (l && LINX == l)){
                     name = list[i][1].toLowerCase();
-                    if(name.includes(search.value.toLowerCase()) || search.value == ""){
-                        place(i, list);
+                    if(window.innerWidth > 800){
+                        if(name.includes(search2.value.toLowerCase()) || search.value == ""){
+                            place(i, list);
+                        }
+                    } else {
+                        if(name.includes(search.value.toLowerCase()) || search.value == ""){
+                            place(i, list);
+                        }
                     }
                 }
             }
