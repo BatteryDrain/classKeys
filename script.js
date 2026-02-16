@@ -17,6 +17,7 @@ function setconst() {
         linxSWT = document.getElementById("linx2");
         sortSEL = document.getElementById("sort2");
         searchIN = document.getElementById("search2");
+        countN = document.getElementById("count2");
     } else {
         lightmodeSWT = document.getElementById("lightmode");
         singSWT =document.getElementById("sing");
@@ -26,6 +27,7 @@ function setconst() {
         linxSWT = document.getElementById("linx");
         sortSEL = document.getElementById("sort");
         searchIN = document.getElementById("search");
+        countN = document.getElementById("count");
     }
 }
 
@@ -209,7 +211,7 @@ function populate() {
             preplace(DATASORTED);
         }
     }
-    count.innerHTML = content.childElementCount;
+    countN.innerHTML = content.childElementCount;
     document.body.style.overflowY = "hidden";
     CAP = document.querySelectorAll("figure > figcaption");
 }
