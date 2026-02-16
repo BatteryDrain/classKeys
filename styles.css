@@ -42,7 +42,7 @@ header {
     flex-direction: column;
 }
 
-#inner div div {
+#mobile div div {
     margin: 0;
     margin-bottom: 5px;
 }
@@ -235,7 +235,6 @@ input {
 }
 
 .big * {
-    margin: o;
     height: 20px;
 }
 
