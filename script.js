@@ -9,25 +9,25 @@ setconst();
 
 function setconst() {
     if(window.innerWidth > 599){
-        lightmodeSWT = document.getElementById("lightmode2");
-        singSWT =document.getElementById("sing2");
-        multiSWT = document.getElementById("multi2");
-        windSWT = document.getElementById("wind2");
-        apleSWT = document.getElementById("aple2");
-        linxSWT = document.getElementById("linx2");
-        sortSEL = document.getElementById("sort2");
-        searchIN = document.getElementById("search2");
-        countN = document.getElementById("count2");
+        let lightmodeSWT = document.getElementById("lightmode2");
+        let singSWT =document.getElementById("sing2");
+        let multiSWT = document.getElementById("multi2");
+        let windSWT = document.getElementById("wind2");
+        let apleSWT = document.getElementById("aple2");
+        let linxSWT = document.getElementById("linx2");
+        let sortSEL = document.getElementById("sort2");
+        let searchIN = document.getElementById("search2");
+        let countN = document.getElementById("count2");
     } else {
-        lightmodeSWT = document.getElementById("lightmode");
-        singSWT =document.getElementById("sing");
-        multiSWT = document.getElementById("multi");
-        windSWT = document.getElementById("wind");
-        apleSWT = document.getElementById("aple");
-        linxSWT = document.getElementById("linx");
-        sortSEL = document.getElementById("sort");
-        searchIN = document.getElementById("search");
-        countN = document.getElementById("count");
+        let lightmodeSWT = document.getElementById("lightmode");
+        let singSWT =document.getElementById("sing");
+        let multiSWT = document.getElementById("multi");
+        let windSWT = document.getElementById("wind");
+        let apleSWT = document.getElementById("aple");
+        let linxSWT = document.getElementById("linx");
+        let sortSEL = document.getElementById("sort");
+        let searchIN = document.getElementById("search");
+        let countN = document.getElementById("count");
     }
 }
 
