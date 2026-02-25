@@ -127,7 +127,7 @@ sortSEL.addEventListener("change", () => {
 
 searchIN.addEventListener("change", () => {
     populate();
-    if(window.innerWidth < 801){
+    if(!filters.classList.contains("hide")){
         toggleF();
     }
 });
