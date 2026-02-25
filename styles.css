@@ -204,6 +204,14 @@ footer {
     z-index: 1;
 }
 
+#sing {
+    margin-right: 5px;
+}
+
+#sing2 {
+    margin-right: 5px;
+}
+
 button {
     height: fit-content;
     width: fit-content;

@@ -122,7 +122,7 @@ pick.addEventListener("click", () => {
 });
 
 logo.addEventListener("click", () => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0, 'smooth');
 });
 
 sortSEL.addEventListener("change", () => {
