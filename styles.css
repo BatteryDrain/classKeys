@@ -238,7 +238,8 @@ input {
     margin-bottom: 5px;
     background-color: var(--grey);
     border-radius: 15px;
-    padding: 2px;
+    padding: 4px;
+    font-weight: 400;
 }
 
 .big * {
