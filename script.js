@@ -127,7 +127,9 @@ sortSEL.addEventListener("change", () => {
 
 searchIN.addEventListener("change", () => {
     populate();
-    toggleF();
+    if(window.innerWidth < 801){
+        toggleF();
+    }
 });
 
 window.addEventListener('resize', function() {
