@@ -8,7 +8,7 @@ CAP = null;
 setconst();
 
 function setconst() {
-    if(window.innerWidth > 599){
+    if(window.innerWidth > 710){
         lightmodeSWT = document.getElementById("lightmode2");
         singSWT =document.getElementById("sing2");
         multiSWT = document.getElementById("multi2");
@@ -142,7 +142,7 @@ searchIN.addEventListener("change", () => {
 });
 
 window.addEventListener('resize', function() {
-    if(window.innerWidth > 800){
+    if(window.innerWidth > 710){
         document.documentElement.style.overscrollBehavior = "none";
     }
     setconst();
