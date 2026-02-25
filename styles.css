@@ -239,6 +239,7 @@ input {
     background-color: var(--grey);
     border-radius: 15px;
     padding: 4px;
+    padding-left: 9px;
     font-weight: 400;
 }
 
