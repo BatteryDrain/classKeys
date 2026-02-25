@@ -122,8 +122,13 @@ pick.addEventListener("click", () => {
 });
 
 logo.addEventListener("click", () => {
-    window.scrollTo(0, 0, 'smooth');
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
+
 
 sortSEL.addEventListener("change", () => {
     populate();
