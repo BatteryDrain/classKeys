@@ -236,6 +236,9 @@ input {
 .big {
     margin: 0 5px;
     margin-bottom: 5px;
+    background-color: var(--grey);
+    border-radius: 15px;
+    padding: 2px;
 }
 
 .big * {
