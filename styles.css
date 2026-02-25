@@ -64,7 +64,6 @@ header {
     display: inline-block;
     width: 32px;
     height:18px;
-    margin-right: 5px;
     background-color: #ccc;
     border-radius: 34px;
     cursor: pointer;
@@ -239,7 +238,6 @@ input {
     background-color: var(--grey);
     border-radius: 15px;
     padding: 4px;
-    padding-left: 9px;
     font-weight: 400;
 }
 
