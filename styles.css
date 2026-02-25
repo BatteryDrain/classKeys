@@ -204,14 +204,6 @@ footer {
     z-index: 1;
 }
 
-#sing {
-    margin-right: 5px;
-}
-
-#sing2 {
-    margin-right: 5px;
-}
-
 button {
     height: fit-content;
     width: fit-content;
@@ -261,6 +253,10 @@ input {
 .col {
     display: flex;
     flex-direction: column;
+}
+
+.right {
+    margin-right: 5px;
 }
 
 .hide {
