@@ -205,7 +205,6 @@ footer {
 }
 
 #pick {
-    position: absolute;
     margin: 5px;
     z-index: 1;
 }
