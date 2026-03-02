@@ -123,8 +123,12 @@ pick.addEventListener("click", () => {
 });
 
 clearBTN.addEventListener("click", () => {
-    searchIN.value = "";
-    searchIN2.value = "";
+    if (searchIN){
+        searchIN.value = "";
+    }
+    if (searchIN2){
+        searchIN2.value = "";
+    }
     console.log("search cleared");
     clear();
     populate();
@@ -380,7 +384,12 @@ function toggleF(){
 }
 
 function clear() {
-    search = searchIN.value + searchIN2.value;
+    if (searchIN){
+        search = searchIN.value;
+    }
+        if (searchIN2){
+        search = searchIN2.value;
+    }
     if(search.length != 0){
         if(!clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
