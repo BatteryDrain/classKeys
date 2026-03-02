@@ -375,6 +375,7 @@ function toggleF(){
 }
 
 function clear() {
+    console.log("here");
     if(search.value.length != 0){
         if(clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
