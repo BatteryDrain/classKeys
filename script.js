@@ -119,7 +119,11 @@ pick.addEventListener("click", () => {
     temp = CAP[temp].innerHTML;
     searchIN.value = temp;
     populate();
-    clearBTN();
+    clear();
+});
+
+clearBTN.addEventListener("click", () => {
+    clear();
 });
 
 logo.addEventListener("click", () => {
@@ -370,7 +374,7 @@ function toggleF(){
     }
 }
 
-function clearBTN() {
+function clear() {
     if(search.value.length != 0){
         if(clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
