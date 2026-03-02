@@ -119,6 +119,7 @@ pick.addEventListener("click", () => {
     temp = CAP[temp].innerHTML;
     searchIN.value = temp;
     populate();
+    clearBTN();
 });
 
 logo.addEventListener("click", () => {
@@ -366,5 +367,17 @@ function toggleF(){
         showOhide.innerHTML = "show filters";
     } else {
         showOhide.innerHTML = "hide filters";
+    }
+}
+
+function clearBTN() {
+    if(search.value.length != 0){
+        if(clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
+    } else {
+        if(!clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
     }
 }
