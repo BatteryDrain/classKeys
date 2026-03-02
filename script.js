@@ -123,8 +123,9 @@ pick.addEventListener("click", () => {
 });
 
 clearBTN.addEventListener("click", () => {
-    search.value = "";
-    console.log("search" + search.value);
+    searchIN.value = "";
+    searchIN2.value = "";
+    console.log("search cleared");
     clear();
     populate();
 });
@@ -147,6 +148,7 @@ searchIN.addEventListener("change", () => {
     if(!filters.classList.contains("hide")){
         toggleF();
     }
+    clear();
 });
 
 window.addEventListener('resize', function() {
@@ -378,7 +380,8 @@ function toggleF(){
 }
 
 function clear() {
-    if(search.value.length != 0){
+    search = searchIN.value + searchIN2.value;
+    if(search.length != 0){
         if(!clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
         }
