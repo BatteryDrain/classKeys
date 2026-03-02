@@ -384,11 +384,7 @@ function toggleF(){
 
 function clear() {
     if (searchIN) {
-        search = searchIN.value;
-    } else if (searchIN2) {
-        search = searchIN2.value;
-    }
-    if(search.length != 0){
+            if(searchIN.value.length != 0){
         if(!clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
         }
@@ -396,5 +392,16 @@ function clear() {
         if(clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
         }
+    }
+    } else if (searchIN2) {
+            if(searchIN2.value.length != 0){
+        if(!clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
+    } else {
+        if(clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
+    }
     }
 }
