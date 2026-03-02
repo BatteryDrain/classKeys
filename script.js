@@ -123,7 +123,9 @@ pick.addEventListener("click", () => {
 });
 
 clearBTN.addEventListener("click", () => {
+    search.value = "";
     clear();
+    populate();
 });
 
 logo.addEventListener("click", () => {
