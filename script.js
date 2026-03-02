@@ -123,10 +123,9 @@ pick.addEventListener("click", () => {
 });
 
 clearBTN.addEventListener("click", () => {
-    if (searchIN){
+    if (searchIN) {
         searchIN.value = "";
-    }
-    if (searchIN2){
+    } else if (searchIN2) {
         searchIN2.value = "";
     }
     console.log("search cleared");
@@ -384,10 +383,9 @@ function toggleF(){
 }
 
 function clear() {
-    if (searchIN){
+    if (searchIN) {
         search = searchIN.value;
-    }
-        if (searchIN2){
+    } else if (searchIN2) {
         search = searchIN2.value;
     }
     if(search.length != 0){
