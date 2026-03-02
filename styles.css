@@ -192,11 +192,6 @@ p {
     box-shadow: 0px 0px 40px 5px rgb(0, 0, 0);
 }
 
-#clearBTN {
-    background-color: red;
-    color: white;
-}
-
 footer {
     width: 100vw;
     bottom: 0;
@@ -206,6 +201,12 @@ footer {
 #pick {
     margin: 5px;
     z-index: 1;
+}
+
+#clearBTN {
+    background-color: red;
+    color: white;
+    margin: 5px;
 }
 
 button {

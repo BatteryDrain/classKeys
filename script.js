@@ -124,6 +124,7 @@ pick.addEventListener("click", () => {
 
 clearBTN.addEventListener("click", () => {
     search.value = "";
+    console.log("search" + search.value);
     clear();
     populate();
 });
@@ -377,7 +378,6 @@ function toggleF(){
 }
 
 function clear() {
-    console.log("here");
     if(search.value.length != 0){
         if(!clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
