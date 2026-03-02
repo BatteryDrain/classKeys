@@ -384,24 +384,28 @@ function toggleF(){
 
 function clear() {
     if (searchIN) {
+        console.log("search");
             if(searchIN.value.length != 0){
-        if(!clearBTN.classList.contains("hide")){
-            clearBTN.classList.toggle("hide");
-        }
-    } else {
-        if(clearBTN.classList.contains("hide")){
-            clearBTN.classList.toggle("hide");
-        }
-    }
+                cobnsole.log(searchIN.value.length);
+                if(!clearBTN.classList.contains("hide")){
+                    clearBTN.classList.toggle("hide");
+                }
+            } else {
+                if(clearBTN.classList.contains("hide")){
+                    clearBTN.classList.toggle("hide");
+                }
+            }
     } else if (searchIN2) {
+        console.log("search2");
             if(searchIN2.value.length != 0){
-        if(!clearBTN.classList.contains("hide")){
-            clearBTN.classList.toggle("hide");
-        }
-    } else {
-        if(clearBTN.classList.contains("hide")){
-            clearBTN.classList.toggle("hide");
-        }
-    }
+                console.log(searchIN2.value.length);
+                if(!clearBTN.classList.contains("hide")){
+                    clearBTN.classList.toggle("hide");
+                }
+            } else {
+                if(clearBTN.classList.contains("hide")){
+                    clearBTN.classList.toggle("hide");
+                }
+            }
     }
 }
