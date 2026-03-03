@@ -208,10 +208,6 @@ footer {
     margin: 5px;
 }
 
-#pick:hover {
-    cursor: pointer;
-}
-
 #clearBTN {
     background-color: red;
     color: white;
@@ -306,10 +302,6 @@ input {
         filter: drop-shadow(16px 16px 30px var(--blue));
     }
 
-    figure img:hover {
-        cursor: pointer;
-    }
-
     #inner {
         flex-direction: row;
     }
@@ -375,5 +367,9 @@ input {
 
     #Bangle {
         position: absolute;
+    }
+
+    img:hover {
+        cursor: pointer;
     }
 }
