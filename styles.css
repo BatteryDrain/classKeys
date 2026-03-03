@@ -304,7 +304,11 @@ input {
         z-index: 0;
         transform: scale(1.1);
         filter: drop-shadow(16px 16px 30px var(--blue));
-    } 
+    }
+
+    figure img:hover {
+        cursor: pointer;
+    }
 
     #inner {
         flex-direction: row;
@@ -331,7 +335,7 @@ input {
     }
 
     #foot {
-    height: 10vw;
+        height: 10vw;
     }
 
     #pick {
@@ -349,9 +353,6 @@ input {
 
     #mobile {
         display: none;
-    }
-    #img:hover {
-        cursor: pointer;
     }
 }
 
