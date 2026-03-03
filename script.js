@@ -386,7 +386,7 @@ function clear() {
     if (searchIN) {
         console.log("search");
             if(searchIN.value.length != 0){
-                cobnsole.log(searchIN.value.length);
+                console.log(searchIN.value.length);
                 if(!clearBTN.classList.contains("hide")){
                     clearBTN.classList.toggle("hide");
                 }
