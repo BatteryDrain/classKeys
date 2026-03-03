@@ -196,20 +196,18 @@ footer {
     width: 100vw;
     bottom: 0;
     height: 10vw;
+    position: absolute;
+    z-index: 5;
 }
 
 #pick {
-    position: absolute;
     margin: 5px;
-    z-index: 5;
 }
 
 #clearBTN {
-    position: absolute;
     background-color: red;
     color: white;
     margin: 5px;
-    z-index: 5;
 }
 
 button {
