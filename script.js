@@ -123,11 +123,7 @@ pick.addEventListener("click", () => {
 });
 
 clearBTN.addEventListener("click", () => {
-    if (searchIN) {
-        searchIN.value = "";
-    } else if (searchIN2) {
-        searchIN2.value = "";
-    }
+    searchIN.value = "";
     console.log("search cleared");
     clear();
     populate();
@@ -383,29 +379,15 @@ function toggleF(){
 }
 
 function clear() {
-    if (searchIN) {
-        console.log("search");
-            if(searchIN.value.length != 0){
-                console.log(searchIN.value.length);
-                if(!clearBTN.classList.contains("hide")){
-                    clearBTN.classList.toggle("hide");
-                }
-            } else {
-                if(clearBTN.classList.contains("hide")){
-                    clearBTN.classList.toggle("hide");
-                }
-            }
-    } else if (searchIN2) {
-        console.log("search2");
-            if(searchIN2.value.length != 0){
-                console.log(searchIN2.value.length);
-                if(!clearBTN.classList.contains("hide")){
-                    clearBTN.classList.toggle("hide");
-                }
-            } else {
-                if(clearBTN.classList.contains("hide")){
-                    clearBTN.classList.toggle("hide");
-                }
-            }
+    console.log(searchIN.value.length);
+    if(searchIN.value.length != 0){
+        console.log(clearBTN.classList);
+        if(!clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
+    } else {
+        if(clearBTN.classList.contains("hide")){
+            clearBTN.classList.toggle("hide");
+        }
     }
 }
