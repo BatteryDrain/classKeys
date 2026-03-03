@@ -195,14 +195,13 @@ footer {
     width: 100vw;
     bottom: 0;
     min-height: 100px;
+    height: fit-content;
     position: absolute;
     z-index: 5;
 }
 
 #pick {
     margin: 5px;
-    position: absolute;
-    z-index: 10;
 }
 
 #clearBTN {
@@ -210,7 +209,6 @@ footer {
     color: white;
     margin: 5px;
     position: absolute;
-    z-index: 11;
     bottom: 0;
 }
 
