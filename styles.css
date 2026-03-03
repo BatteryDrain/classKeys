@@ -315,6 +315,10 @@ input {
         justify-content: flex-end;
     }
 
+    #foot {
+    height: 0;
+}
+
     #pick {
         
     }
