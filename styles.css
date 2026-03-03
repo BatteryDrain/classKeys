@@ -208,12 +208,20 @@ footer {
     margin: 5px;
 }
 
+#pick:hover {
+    cursor: pointer;
+}
+
 #clearBTN {
     background-color: red;
     color: white;
     margin: 5px;
     position: absolute;
     bottom: 0;
+}
+
+#clearBTN:hover {
+    cursor: pointer;
 }
 
 button {
