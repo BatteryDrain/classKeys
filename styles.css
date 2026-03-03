@@ -172,7 +172,7 @@ p {
 }
 
 #foot {
-    height: 17vw;
+    height: 20vw;
     position: relative;
     overflow: hidden;
     background-color: var(--grey);
