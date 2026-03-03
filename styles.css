@@ -311,7 +311,7 @@ input {
 
     footer {
         position: fixed;
-        height: 7vw;
+        height: 100px;
         display: flex;
         z-index: 1;
         justify-content: flex-end;
