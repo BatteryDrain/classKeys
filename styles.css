@@ -194,12 +194,13 @@ p {
 footer {
     width: 100vw;
     bottom: 0;
-    height: 100px;
+    min-height: 100px;
     position: absolute;
     z-index: 5;
 }
 
 #pick {
+    margin: 5px;
 }
 
 #clearBTN {
