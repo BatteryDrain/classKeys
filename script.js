@@ -380,7 +380,7 @@ function toggleF(){
 
 function clear() {
     console.log(searchIN.value.length);
-    if(searchIN.value.length != 0){
+    if(searchIN.value.length == 0){
         console.log(clearBTN.classList);
         if(!clearBTN.classList.contains("hide")){
             clearBTN.classList.toggle("hide");
