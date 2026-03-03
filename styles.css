@@ -200,13 +200,14 @@ footer {
 
 #pick {
     margin: 5px;
-    z-index: 1;
+    z-index: 5;
 }
 
 #clearBTN {
     background-color: red;
     color: white;
     margin: 5px;
+    z-index: 5;
 }
 
 button {
