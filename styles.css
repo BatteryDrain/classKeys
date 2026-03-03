@@ -207,6 +207,8 @@ footer {
     background-color: red;
     color: white;
     margin: 5px;
+    position: absolute;
+    bottom: 0;
 }
 
 button {
