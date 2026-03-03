@@ -346,6 +346,10 @@ input {
     #mobile {
         display: none;
     }
+
+    img:hover {
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-height: 558px) {
@@ -367,9 +371,5 @@ input {
 
     #Bangle {
         position: absolute;
-    }
-
-    img:hover {
-        cursor: pointer;
     }
 }
