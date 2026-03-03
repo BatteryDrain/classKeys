@@ -199,11 +199,13 @@ footer {
 }
 
 #pick {
+    position: absolute;
     margin: 5px;
     z-index: 5;
 }
 
 #clearBTN {
+    position: absolute;
     background-color: red;
     color: white;
     margin: 5px;
