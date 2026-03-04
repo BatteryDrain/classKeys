@@ -264,7 +264,11 @@ input {
 
 .big p {
     font-weight: bold;
-    margin-left: 3px;
+    margin-left: 2px;
+}
+
+.marL {
+    margin-left: 2px;
 }
 
 .row {
