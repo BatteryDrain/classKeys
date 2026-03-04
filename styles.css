@@ -262,6 +262,10 @@ input {
     height: 20px;
 }
 
+.big p {
+    font-weight: 800px;
+}
+
 .row {
     display: flex;
     flex-direction: row;

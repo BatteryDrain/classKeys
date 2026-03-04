@@ -130,6 +130,10 @@ clearBTN.addEventListener("click", () => {
 });
 
 logo.addEventListener("click", () => {
+    searchIN.value = "";
+    console.log("search cleared");
+    clear();
+    populate();
     window.scrollTo({
         top: 0,
         left: 0,
