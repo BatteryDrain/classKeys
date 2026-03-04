@@ -263,7 +263,8 @@ input {
 }
 
 .big p {
-    font-weight: 800px;
+    font-weight: bold;
+    margin-left: 3px;
 }
 
 .row {
