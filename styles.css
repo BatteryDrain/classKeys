@@ -213,7 +213,7 @@ footer {
     color: white;
     margin: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
 }
 
 #clearBTN:hover {
