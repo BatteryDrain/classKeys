@@ -213,7 +213,7 @@ footer {
     color: white;
     margin: 5px;
     position: absolute;
-    bottom: 80px;
+    bottom: 100px;
 }
 
 #clearBTN:hover {
@@ -339,8 +339,8 @@ input {
         height: 7vw;
     }
 
-    #pick {
-
+    #clearBTN {
+        bottom: 0px;
     }
 
     body {
