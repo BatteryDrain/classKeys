@@ -213,7 +213,7 @@ footer {
     color: white;
     margin: 5px;
     position: absolute;
-    bottom: 100px;
+    bottom: 0px;
 }
 
 #clearBTN:hover {
@@ -340,7 +340,7 @@ input {
     }
 
     #clearBTN {
-        bottom: 0px;
+        bottom: 100px;
     }
 
     body {
