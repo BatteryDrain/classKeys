@@ -206,6 +206,8 @@ footer {
 
 #pick {
     margin: 5px;
+    position: absolute;
+    z-index: 100;
 }
 
 #clearBTN {
