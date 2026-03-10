@@ -175,7 +175,7 @@ p {
 }
 
 #foot {
-    height: 23vw;
+    height: 30vw;
     position: relative;
     overflow: hidden;
     background-color: var(--grey);
@@ -206,8 +206,6 @@ footer {
 
 #pick {
     margin: 5px;
-    position: absolute;
-    z-index: 100;
 }
 
 #clearBTN {
@@ -373,7 +371,7 @@ input {
     }
 
     #foot {
-        height: 23vw;
+        height: 30vw;
     }
 
     footer {
