@@ -44,12 +44,10 @@ lightmodeSWT.addEventListener("change", () => {
     if (lightmodeSWT.checked) {
         content.style.backgroundColor = "rgb(205, 205, 205)";
         foot.style.backgroundColor = "rgb(205, 205, 205)";
-        document.body.style.backgroundColor = "rgb(205, 205, 205)";
         document.cookie = "-=true; path=/";
     } else {
         content.style.backgroundColor = "";
         foot.style.backgroundColor = "";
-        document.body.style.backgroundColor = "";
         document.cookie = "-=; Max-Age=0; path=/";
     }
     populate();
